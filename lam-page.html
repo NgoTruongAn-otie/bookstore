@@ -5,7 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nhà sách online</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        h1 {
+            text-align: center; 
+            margin-top: 120px;
+        }
+    </style>
 </head>
+
 <body>
 
     <header class="header">
@@ -20,32 +27,53 @@
         </nav>
     </header>
 
-    <h1 style="text-align: center; 
-            margin-top: 120px;">
-            LAM
-    </h1>
-    <hr class="line">
-    <div class="container">
+    <main>
+        <section>
+            <h1>LAM</h1>
+            <hr>
+        </section>
 
-        <div class="product">
-            <a href="./lam/di-vong-the-gioi-van-quanh-mot-nguoi.html"><img src="./image/lam/di-vong-the-gioi-quanh-mot-nguoi.jpg" class="img"></a> 
-            <a href="./lam/di-vong-the-gioi-van-quanh-mot-nguoi.html" class="text-link">Đi vòng thế giới vẫn quanh một người</a>
-            <div style="margin-left: 0; margin-top: 20px;">
-                <p class="price">76,500 đ</p> 
-                <del>96,000 đ</del>
-            </div>
-        </div>
+        <section class="container">
+            <article class="product">
+                <figure>
+                    <a href="./lam/di-vong-the-gioi-van-quanh-mot-nguoi.html">
+                        <img src="./image/lam/di-vong-the-gioi-quanh-mot-nguoi.jpg">
+                    </a> 
+                </figure>
+                <div>
+                    <h2>
+                        <a href="./lam/di-vong-the-gioi-van-quanh-mot-nguoi.html" class="text-link">
+                            Đi vòng thế giới vẫn quanh một người
+                        </a>
+                    </h2>
+                    <div class="product-price">
+                        <p class="price">76,500 đ</p> 
+                        <del>96,000 đ</del>
+                    </div>
+                </div>
+            </article>
 
-        <div class="product">
-            <a href="./lam/tron-len-mai-nha-de-khoc.html"><img src="./image/lam/tron-len-mai-nha-de-khoc.jpg" class="img"></a> 
-            <a href="./lam/tron-len-mai-nha-de-khoc.html" class="text-link">Trốn lên mái nhà để khóc</a>
-             <div style="margin-left: 0; margin-top: 20px;">
-                <p class="price">76,000 đ</p> 
-                <del>95,000 đ</del>
-            </div>
-        </div>
+            <article class="product">
+                <figure>
+                    <a href="./lam/tron-len-mai-nha-de-khoc.html">
+                        <img src="./image/lam/tron-len-mai-nha-de-khoc.jpg">
+                    </a> 
+                </figure>
+                <div>
+                    <h2>
+                        <a href="./lam/tron-len-mai-nha-de-khoc.html" class="text-link">
+                                Trốn lên mái nhà để khóc
+                        </a>
+                    </h2>
+                    <div class="product-price">
+                        <p class="price">76,000 đ</p> 
+                        <del>95,000 đ</del>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
 
-    </div>
 </body>
 
 </html>
