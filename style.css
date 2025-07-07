@@ -124,13 +124,15 @@ img {
     margin: 20px auto;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     background-color: white;
     border-radius: 10px;
     padding: 30px;
     overflow: hidden;
     margin-top: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    gap: 20px;
 }
 
 .price-container {
@@ -181,7 +183,7 @@ img {
 }
 
 .product-information {
-    margin-top: 120px;
+    width: 50%;
     font-size: 25px;
 }
 
