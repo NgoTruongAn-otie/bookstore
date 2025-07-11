@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nhà sách online</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
         h1 {
             text-align: center; 
@@ -16,14 +17,36 @@
 <body>
 
     <header class="header">
-        <a href="" class="logo">Logo</a>
+        <i class="fa-solid fa-book-open logo"></i>
         <nav class="navbar">
             <a href="./index.html">Trang chủ</a>
             <a href="">Nguyễn Nhật Ánh</a>
-            <a href="./to-hoai-page.html">Tô Hoài</a>
+            <a href="">Tô Hoài</a>
             <a href="">Nam Cao</a>
             <a href="./ngo-tat-to-page.html">Ngô Tất Tố</a>
             <a href="#">Lam</a>
+        </nav>
+
+        <label for="navbar-mobile-input" class="navbar-mobile-button">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+
+        <input type="checkbox" hidden name="" class="navbar-input" id="navbar-mobile-input">
+
+        <label for="navbar-mobile-input" class="navbar-overlay"></label>
+
+        <nav class="navbar-mobile">
+            <label for="navbar-mobile-input" class="navbar-mobile-close">
+                <i class="fa-solid fa-xmark"></i>
+            </label>
+            <div>
+                <a href="./index.html">Trang chủ</a>
+                <a href="">Nguyễn Nhật Ánh</a>
+                <a href="">Tô Hoài</a>
+                <a href="">Nam Cao</a>
+                <a href="./ngo-tat-to-page.html">Ngô Tất Tố</a>
+                <a href="#">Lam</a>
+            </div>
         </nav>
     </header>
 
