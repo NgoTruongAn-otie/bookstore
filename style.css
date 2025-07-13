@@ -16,7 +16,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 100px;
+    padding: 0px 50px;
     background: #033875;
     display: flex;
     justify-content: space-between;
@@ -28,6 +28,7 @@ body {
 .logo {
     font-size: 30px;
     color: white;
+    margin-left: 55px
 }
 
 .logo-to-text {
@@ -38,28 +39,44 @@ body {
     margin-left: -60px;
 }
 
-.navbar a {
+.navbar li {
+    display: inline-block;
     position: relative;
+    min-width: 200px;
+    text-align: center;
+}
+
+.navbar a {
+    display: block;
     text-decoration: none;
+    color: whitesmoke;
+    padding: 25px 10px;
     font-size: 21px;
     font-weight: 600;
-    color: whitesmoke;
-    margin-left: 40px;
 }
 
-.navbar a::before {
+.dropdown li {
+    display: block;
+}
+
+.navbar i {
+    margin-left: 3px;
+}
+
+.dropdown {
     position: absolute;
-    content: '';
-    top: 100%;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: white;
-    transition: 0.3s;
+    background-color: #033875;
+    width: 100%;
+    display: none;
+    min-width: 200px;
 }
 
-.navbar a:hover::before {
-    width: 100%;
+.navbar a:hover {
+    background-color: #0b57af;
+}
+
+.navbar li:hover .dropdown {
+    display: block;
 }
 
 .navbar-mobile-button {
