@@ -393,12 +393,13 @@ img {
         border-top: 1px solid rgba(220, 218, 218, 0.55);
     }
 
-    .product figure {
+    .product figure img {
         margin: 0;
     }
 
     .product a {
         margin-top: 0;
+        font-size: 15px;
     }
 
     .product-price {
@@ -408,10 +409,6 @@ img {
     .product h2 {
         height: 48px;
         margin-top: -40px;
-    }
-
-    .product a {
-        font-size: 15px;
     }
 
     .price {
@@ -491,6 +488,53 @@ img {
     .text {
         margin-top: -5px;
         width: 90%;
+    }
+
+    .suggestion-container {
+        padding: 0;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+        margin: 20px;
+    }
+
+    .suggestion-container .product {
+        width: 31%;
+        font-size: 12px;
+    }
+
+    .suggestion-container .product figure {
+        padding: 0;
+        margin: 0px;
+    }
+
+    .suggestion-container .product a {
+        font-size: 11px;
+    }
+
+    .suggestion-container .product h2 {
+        margin-top: 5px;
+    }
+
+    .suggestion-container .price {
+        font-size: 12.5px;
+    }
+
+    .suggestion-container .product-price {
+        margin-top: -10px;
+        font-size: 11px;
+    }
+
+    .suggestion-container .product figure img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center;
+        padding: 10px;
+    }
+
+    .suggestion-container .product:nth-child(-n+3) { 
+        border-top: 1px solid rgba(220, 218, 218, 0.55);
     }
 }
 
