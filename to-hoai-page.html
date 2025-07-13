@@ -1,166 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nhà sách online – Tô Hoài</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-    h1 {
-      text-align: center;
-      margin-top: 120px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhà sách online</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        h1 {
+            text-align: center; 
+            margin-top: 120px;
+        }
+    </style>
 </head>
+
 <body>
-  <header class="header">
-    <a href="" class="logo">Logo</a>
-    <nav class="navbar">
-      <a href="./index.html">Trang chủ</a>
-      <a href="">Nguyễn Nhật Ánh</a>
-      <a href="./to-hoai-page.html">Tô Hoài</a>
-      <a href="">Nam Cao</a>
-      <a href="./ngo-tat-to-page.html">Ngô Tất Tố</a>
-      <a href="./lam-page.html">Lam</a>
-    </nav>
-  </header>
 
-  <main>
-    <section>
-      <h1>TÔ HOÀI</h1>
-      <hr>
-    </section>
-
-    <section class="container">
-      <!-- Dế Mèn -->
-      <article class="product">
-        <figure>
-          <a href="./To hoai/de-men-1.html">
-            <img src="./image/to hoai/de-men_1.jpg" alt="Dế Mèn - Truyện Đồng Thoại">
-          </a>
-        </figure>
+    <header class="header">
         <div>
-          <h2><a href="./To hoai/de-men-1.html" class="text-link">Dế Mèn - Truyện Đồng Thoại</a></h2>
-          <div class="product-price">
-            <p class="price">90,000 đ</p> <del>100,000 đ</del> 
-          </div>
+            <i class="fa-solid fa-book-open logo"></i>
+            <span class="logo-to-text">bookstore</span>
         </div>
-      </article>
+        <nav class="navbar">
+            <a href="./index.html">Trang chủ</a>
+            <a href="./ngyen-nhat-anh-page.html">Nguyễn Nhật Ánh</a>
+            <a href="#">Tô Hoài</a>
+            <a href="./nam-cao-page.html">Nam Cao</a>
+            <a href="./ngo-tat-to-page.html">Ngô Tất Tố</a>
+            <a href="./lam-page.html">Lam</a>
+        </nav>
 
-      <!-- Ký Ức Đông Dương -->
-      <article class="product">
-        <figure>
-          <a href="./To hoai/ky-uc-dong-duong.html">
-            <img src="./image/to hoai/ky-uc-dong-duong_1.jpg" alt="Ký Ức Đông Dương">
-          </a>
-        </figure>
-        <div>
-          <h2><a href="./To hoai/ky-uc-dong-duong.html" class="text-link">Ký Ức Đông Dương</a></h2>
-          <div class="product-price">
-            <p class="price">54,000 đ</p> <del>60,000 đ</del> 
-          </div>
-        </div>
-      </article>
+        <label for="navbar-mobile-input" class="navbar-mobile-button">
+            <i class="fa-solid fa-bars"></i>
+        </label>
 
-      <!-- Ký Ức Phiến Lăng -->
-      <article class="product">
-        <figure>
-          <a href="./To hoai/ky-uc-phien-lang.html">
-            <img src="./image/to hoai/ky-uc-phien-lang_bia.jpg" alt="Ký Ức Phiến Lăng">
-          </a>
-        </figure>
-        <div>
-          <h2><a href="./To hoai/ky-uc-phien-lang.html" class="text-link">Ký Ức Phiến Lăng</a></h2>
-          <div class="product-price">
-            <p class="price">99,000 đ</p> <del>110,000 đ</del> 
-          </div>
-        </div>
-      </article>
+        <input type="checkbox" hidden name="" class="navbar-input" id="navbar-mobile-input">
 
-      <!-- Mực Tàu Giấy Bản -->
-      <article class="product">
-        <figure>
-          <a href="./To hoai/mau-tau-giay-ban.html">
-            <img src="./image/to hoai/muc-tau-giay-ban_bia.jpg" alt="Mực Tàu Giấy Bản">
-          </a>
-        </figure>
-        <div>
-          <h2><a href="./To hoai/mau-tau-giay-ban.html" class="text-link">Mực Tàu Giấy Bản</a></h2>
-          <div class="product-price">
-            <p class="price">76,500 đ</p> <del>85,000 đ</del> 
-          </div>
-        </div>
-      </article>
+        <label for="navbar-mobile-input" class="navbar-overlay"></label>
 
-      <!-- Sổ Tay Viết Văn -->
-      <article class="product">
-        <figure>
-          <a href="./To hoai/so-tay-viet-van.html">
-            <img src="./image/to hoai/so-tay-viet-van.jpg" alt="Sổ Tay Viết Văn">
-          </a>
-        </figure>
-        <div>
-          <h2><a href="./To hoai/so-tay-viet-van.html" class="text-link">Sổ Tay Viết Văn</a></h2>
-          <div class="product-price">
-            <p class="price">54,000 đ</p> <del>60,000 đ</del> 
-          </div>
-        </div>
-      </article>
+        <nav class="navbar-mobile">
+            <label for="navbar-mobile-input" class="navbar-mobile-close">
+                <i class="fa-solid fa-xmark"></i>
+            </label>
+            <div>
+                <a href="./index.html">Trang chủ</a>
+                <a href="./ngyen-nhat-anh-page.html">Nguyễn Nhật Ánh</a>
+                <a href="#">Tô Hoài</a>
+                <a href="./nam-cao-page.html">Nam Cao</a>
+                <a href="./ngo-tat-to-page.html">Ngô Tất Tố</a>
+                <a href="./lam-page.html">Lam</a>
+            </div>
+        </nav>
+    </header>
 
-      <!-- Những Truyện Hay Viết Cho Thiếu Nhi -->
-      <article class="product">
-        <figure>
-          <a href="./To hoai/truyen-cho-thieu-nhi.html">
-            <img src="./image/to hoai/truyen-cho-thieu-nhi.jpg" alt="Những Truyện Hay Viết Cho Thiếu Nhi">
-          </a>
-        </figure>
-        <div>
-          <h2><a href="./To hoai/truyen-cho-thieu-nhi.html" class="text-link">Những Truyện Hay Viết Cho Thiếu Nhi</a></h2>
-          <div class="product-price">
-            <p class="price">64,000 đ</p> <del>80,000 đ</del> 
-          </div>
-        </div>
-      </article>
-      <!-- Chuyện Để Quên -->
-<article class="product">
-  <figure>
-    <a href="./To hoai/chuyen-de-quen.html">
-      <img src="./image/to hoai/chuyen-de-quen_bia.jpg" alt="Chuyện Để Quên">
-    </a>
-  </figure>
-  <div>
-    <h2>
-      <a href="./To hoai/chuyen-de-quen.html" class="text-link">Chuyện Để Quên</a>
-    </h2>
-    <div class="product-price">
-      <p class="price">58,000 đ</p>
-      <del>75,000 đ</del>
-     
-    </div>
-  </div>
-</article>
+    <main>
+        <section>
+            <h1>TÔ HOÀI</h1>
+            <hr>
+        </section>
 
-<!-- Ngàn Năm Sử Việt – Thời Hồng Bàng – Nhà Chử -->
-<article class="product">
-  <figure>
-    <a href="./To hoai/ngan-nam-su-viet_thoi-hong-bang.html">
-      <img src="./image/to hoai/ngan-nam-su-viet_thoi-hong-bang_nha-chu.jpg" alt="Ngàn Năm Sử Việt – Thời Hồng Bàng – Nhà Chử">
-    </a>
-  </figure>
-  <div>
-    <h2>
-      <a href="./To hoai/ngan-nam-su-viet_thoi-hong-bang.html" class="text-link">
-        Ngàn Năm Sử Việt – Thời Hồng Bàng – Nhà Chử
-      </a>
-    </h2>
-    <div class="product-price">
-      <p class="price">43,000 đ</p>
-      <del>48,000 đ</del>
-      
-    </div>
-  </div>
-</article>
-    </section>
-  </main>
+        <section class="container">
+            <article class="product">
+                <figure>
+                    <a href="./To hoai/ky-uc-dong-duong.html">
+                        <img src="./image/to hoai/ky-uc-dong-duong_1.jpg" alt="Ký Ức Đông Dương">
+                    </a>
+                </figure>
+                <div>
+                    <h2>
+                        <a href="" class="text-link">Ký Ức Đông Dương</a>
+                    </h2>
+                    <div class="product-price">
+                        <p class="price">45,000 đ</p>
+                        <del>60,000 đ</del>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product">
+                <figure>
+                    <a href="./To hoai/de-men-1.html">
+                        <img src="./image/to hoai/de-men_1.jpg" alt="Dế Mèn Phiêu Lưu Ký - Tái Bản 2020">
+                    </a>
+                </figure>
+                <div>
+                    <h2>
+                        <a href="" class="text-link">Dế Mèn Phiêu Lưu Ký - Tái Bản 2020</a>
+                    </h2>
+                    <div class="product-price">
+                        <p class="price">90,000 đ</p>
+                        <del>100,000 đ</del>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product">
+                <figure>
+                    <a href="./To hoai/chuyen-de-quen.html">
+                        <img src="./image/to hoai/chuyen-de-quen_bia.jpg" alt="Chuyện Để Quên">
+                    </a>
+                </figure>
+                <div>
+                    <h2>
+                        <a href="" class="text-link">Chuyện Để Quên</a>
+                    </h2>
+                    <div class="product-price">
+                        <p class="price">58,000 đ</p>
+                        <del>75,000 đ</del>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product">
+                <figure>
+                    <a href="./To hoai/ky-uc-phien-lang.html">
+                        <img src="./image/to hoai/ky-uc-phien-lang_bia.jpg" alt="Ký Ức Phiên Lãng">
+                    </a>
+                </figure>
+                <div>
+                    <h2>
+                        <a href="" class="text-link">Ký Ức Phiên Lãng</a>
+                    </h2>
+                    <div class="product-price">
+                        <p class="price">99,000 đ</p>
+                        <del>110,000 đ</del>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product">
+                <figure>
+                    <a href="./To hoai/ngan-nam-su-viet_thoi-hong-bang.html">
+                        <img src="./image/to hoai/ngan-nam-su-viet_thoi-hong-bang_nha-chu.jpg" alt="Ngàn Năm Sử Việt - Thời Hồng Bàng - Nhà Chử">
+                    </a>
+                </figure>
+                <div>
+                    <h2>
+                        <a href="" class="text-link">Ngàn Năm Sử Việt - Thời Hồng Bàng - Nhà Chử</a>
+                    </h2>
+                    <div class="product-price">
+                        <p class="price">43,000 đ</p>
+                        <del>48,000 đ</del>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product">
+                <figure>
+                    <a href="./To hoai/so-tay-viet-van.html">
+                        <img src="./image/to hoai/so-tay-viet-van.jpg" alt="Sổ Tay Viết Văn">
+                    </a>
+                </figure>
+                <div>
+                    <h2>
+                        <a href="" class="text-link">Sổ Tay Viết Văn</a>
+                    </h2>
+                    <div class="product-price">
+                        <p class="price">54,000 đ</p>
+                        <del>60,000 đ</del>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product">
+                <figure>
+                    <a href="./To hoai/truyen-cho-thieu-nhi.html">
+                        <img src="./image/to hoai/truyen-cho-thieu-nhi.jpg" alt="Những Truyện Hay Viết Cho Thiếu Nhi - Tô Hoài (Tái Bản 2019)">
+                    </a>
+                </figure>
+                <div>
+                    <h2>
+                        <a href="" class="text-link">Những Truyện Hay Viết Cho Thiếu Nhi - Tô Hoài (Tái Bản 2019)</a>
+                    </h2>
+                    <div class="product-price">
+                        <p class="price">64,000 đ</p>
+                        <del>80,000 đ</del>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product">
+                <figure>
+                    <a href="./To hoai/mau-tau-giay-ban.html">
+                        <img src="./image/to hoai/muc-tau-giay-ban_bia.jpg" alt="Mực Tàu Giấy Bản">
+                    </a>
+                </figure>
+                <div>
+                    <h2>
+                        <a href="" class="text-link">Mực Tàu Giấy Bản</a>
+                    </h2>
+                    <div class="product-price">
+                        <p class="price">76,500 đ</p>
+                        <del>85,000 đ</del>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
 </body>
+
 </html>
