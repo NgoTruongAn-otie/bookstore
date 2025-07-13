@@ -523,6 +523,7 @@ img {
     .suggestion-container .product-price {
         margin-top: -10px;
         font-size: 11px;
+        margin-bottom: 10px;
     }
 
     .suggestion-container .product figure img {
