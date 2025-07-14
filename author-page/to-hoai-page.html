@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nhà sách online</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
     <style>
         h1 {
             text-align: center; 
@@ -23,7 +24,7 @@
         </div>
         <nav class="navbar">
             <ul class="navbar">
-                <li><a href="./index.html">Trang chủ</a></li>
+                <li><a href="../index.html">Trang chủ</a></li>
                 <li> <a href="#">Tác giả <i class="fa-solid fa-caret-down"></i></a>
                     <ul class="dropdown">
                         <li><a href="./ngyen-nhat-anh-page.html">Nguyễn Nhật Ánh</a></li>
@@ -51,12 +52,20 @@
                 <i class="fa-solid fa-xmark"></i>
             </label>
             <div>
-                <a href="./index.html">Trang chủ</a>
-                <a href="./ngyen-nhat-anh-page.html">Nguyễn Nhật Ánh</a>
-                <a href="#">Tô Hoài</a>
-                <a href="./nam-cao-page.html">Nam Cao</a>
-                <a href="./ngo-tat-to-page.html">Ngô Tất Tố</a>
-                <a href="./lam-page.html">Lam</a>
+                <ul class="navbar-mobile-dropdown">
+                    <li><a href="../index.html">Trang chủ</a></li>
+                    <li><a href="">Tác giả <i class="ri-arrow-down-s-line"></i></a>
+                        <ul class="dropdown-mobile">
+                            <li><a href="./ngyen-nhat-anh-page.html">Nguyễn Nhật Ánh</a></li>
+                            <li><a href="#">Tô Hoài</a></li>
+                            <li><a href="./nam-cao-page.html">Nam Cao</a></li>
+                            <li><a href="./ngo-tat-to-page.html">Ngô Tất Tố</a></li>
+                            <li><a href="./lam-page.html">Lam</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Văn phòng phẩm</a></li>
+                    <li><a href="">Đồ chơi</a></li>
+                </ul>
             </div>
         </nav>
     </header>
@@ -70,13 +79,13 @@
         <section class="container">
             <article class="product">
                 <figure>
-                    <a href="./To hoai/ky-uc-dong-duong.html">
-                        <img src="./image/to hoai/ky-uc-dong-duong_1.jpg" alt="Ký Ức Đông Dương">
+                    <a href="../To hoai/ky-uc-dong-duong.html">
+                        <img src="../image/to hoai/ky-uc-dong-duong_1.jpg" alt="Ký Ức Đông Dương">
                     </a>
                 </figure>
                 <div>
                     <h2>
-                        <a href="" class="text-link">Ký Ức Đông Dương</a>
+                        <a href="../To hoai/ky-uc-dong-duong.html" class="text-link">Ký Ức Đông Dương</a>
                     </h2>
                     <div class="product-price">
                         <p class="price">45,000 đ</p>
@@ -87,13 +96,13 @@
 
             <article class="product">
                 <figure>
-                    <a href="./To hoai/de-men-1.html">
-                        <img src="./image/to hoai/de-men_1.jpg" alt="Dế Mèn Phiêu Lưu Ký - Tái Bản 2020">
+                    <a href="../To hoai/de-men-1.html">
+                        <img src="../image/to hoai/de-men_1.jpg" alt="Dế Mèn Phiêu Lưu Ký - Tái Bản 2020">
                     </a>
                 </figure>
                 <div>
                     <h2>
-                        <a href="" class="text-link">Dế Mèn Phiêu Lưu Ký - Tái Bản 2020</a>
+                        <a href="../To hoai/de-men-1.html" class="text-link">Dế Mèn Phiêu Lưu Ký - Tái Bản 2020</a>
                     </h2>
                     <div class="product-price">
                         <p class="price">90,000 đ</p>
@@ -104,13 +113,13 @@
 
             <article class="product">
                 <figure>
-                    <a href="./To hoai/chuyen-de-quen.html">
-                        <img src="./image/to hoai/chuyen-de-quen_bia.jpg" alt="Chuyện Để Quên">
+                    <a href="../To hoai/chuyen-de-quen.html">
+                        <img src="../image/to hoai/chuyen-de-quen_bia.jpg" alt="Chuyện Để Quên">
                     </a>
                 </figure>
                 <div>
                     <h2>
-                        <a href="" class="text-link">Chuyện Để Quên</a>
+                        <a href="../To hoai/chuyen-de-quen.html" class="text-link">Chuyện Để Quên</a>
                     </h2>
                     <div class="product-price">
                         <p class="price">58,000 đ</p>
@@ -121,13 +130,13 @@
 
             <article class="product">
                 <figure>
-                    <a href="./To hoai/ky-uc-phien-lang.html">
-                        <img src="./image/to hoai/ky-uc-phien-lang_bia.jpg" alt="Ký Ức Phiên Lãng">
+                    <a href="../To hoai/ky-uc-phien-lang.html">
+                        <img src="../image/to hoai/ky-uc-phien-lang_bia.jpg" alt="Ký Ức Phiên Lãng">
                     </a>
                 </figure>
                 <div>
                     <h2>
-                        <a href="" class="text-link">Ký Ức Phiên Lãng</a>
+                        <a href="../To hoai/ky-uc-phien-lang.html" class="text-link">Ký Ức Phiên Lãng</a>
                     </h2>
                     <div class="product-price">
                         <p class="price">99,000 đ</p>
@@ -138,13 +147,13 @@
 
             <article class="product">
                 <figure>
-                    <a href="./To hoai/ngan-nam-su-viet_thoi-hong-bang.html">
-                        <img src="./image/to hoai/ngan-nam-su-viet_thoi-hong-bang_nha-chu.jpg" alt="Ngàn Năm Sử Việt - Thời Hồng Bàng - Nhà Chử">
+                    <a href="../To hoai/ngan-nam-su-viet_thoi-hong-bang.html">
+                        <img src="../image/to hoai/ngan-nam-su-viet_thoi-hong-bang_nha-chu.jpg" alt="Ngàn Năm Sử Việt - Thời Hồng Bàng - Nhà Chử">
                     </a>
                 </figure>
                 <div>
                     <h2>
-                        <a href="" class="text-link">Ngàn Năm Sử Việt - Thời Hồng Bàng - Nhà Chử</a>
+                        <a href="../To hoai/ngan-nam-su-viet_thoi-hong-bang.html" class="text-link">Ngàn Năm Sử Việt - Thời Hồng Bàng - Nhà Chử</a>
                     </h2>
                     <div class="product-price">
                         <p class="price">43,000 đ</p>
@@ -155,13 +164,13 @@
 
             <article class="product">
                 <figure>
-                    <a href="./To hoai/so-tay-viet-van.html">
-                        <img src="./image/to hoai/so-tay-viet-van.jpg" alt="Sổ Tay Viết Văn">
+                    <a href="../To hoai/so-tay-viet-van.html">
+                        <img src="../image/to hoai/so-tay-viet-van.jpg" alt="Sổ Tay Viết Văn">
                     </a>
                 </figure>
                 <div>
                     <h2>
-                        <a href="" class="text-link">Sổ Tay Viết Văn</a>
+                        <a href="../To hoai/so-tay-viet-van.html" class="text-link">Sổ Tay Viết Văn</a>
                     </h2>
                     <div class="product-price">
                         <p class="price">54,000 đ</p>
@@ -172,13 +181,13 @@
 
             <article class="product">
                 <figure>
-                    <a href="./To hoai/truyen-cho-thieu-nhi.html">
-                        <img src="./image/to hoai/truyen-cho-thieu-nhi.jpg" alt="Những Truyện Hay Viết Cho Thiếu Nhi - Tô Hoài (Tái Bản 2019)">
+                    <a href="../To hoai/truyen-cho-thieu-nhi.html">
+                        <img src="../image/to hoai/truyen-cho-thieu-nhi.jpg" alt="Những Truyện Hay Viết Cho Thiếu Nhi - Tô Hoài (Tái Bản 2019)">
                     </a>
                 </figure>
                 <div>
                     <h2>
-                        <a href="" class="text-link">Những Truyện Hay Viết Cho Thiếu Nhi - Tô Hoài (Tái Bản 2019)</a>
+                        <a href="../To hoai/truyen-cho-thieu-nhi.html" class="text-link">Những Truyện Hay Viết Cho Thiếu Nhi - Tô Hoài (Tái Bản 2019)</a>
                     </h2>
                     <div class="product-price">
                         <p class="price">64,000 đ</p>
@@ -189,13 +198,13 @@
 
             <article class="product">
                 <figure>
-                    <a href="./To hoai/mau-tau-giay-ban.html">
-                        <img src="./image/to hoai/muc-tau-giay-ban_bia.jpg" alt="Mực Tàu Giấy Bản">
+                    <a href="../To hoai/mau-tau-giay-ban.html">
+                        <img src="../image/to hoai/muc-tau-giay-ban_bia.jpg" alt="Mực Tàu Giấy Bản">
                     </a>
                 </figure>
                 <div>
                     <h2>
-                        <a href="" class="text-link">Mực Tàu Giấy Bản</a>
+                        <a href="../To hoai/mau-tau-giay-ban.html" class="text-link">Mực Tàu Giấy Bản</a>
                     </h2>
                     <div class="product-price">
                         <p class="price">76,500 đ</p>
@@ -206,6 +215,20 @@
         </section>
     </main>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Xử lý dropdown mobile
+            const mobileDropdownTrigger = document.querySelector('.navbar-mobile-dropdown li:nth-child(2) > a');
+            const mobileDropdown = document.querySelector('.dropdown-mobile');
+            
+            if (mobileDropdownTrigger && mobileDropdown) {
+                mobileDropdownTrigger.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    mobileDropdown.style.display = mobileDropdown.style.display === 'block' ? 'none' : 'block';
+                });
+            }
+        });
+    </script>
 </body>
 
 </html>

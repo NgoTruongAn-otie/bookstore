@@ -16,7 +16,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 0px 50px;
+    padding: 0;
     background: #033875;
     display: flex;
     justify-content: space-between;
@@ -108,21 +108,38 @@ body {
     transform: translateX(100%);
     opacity: 0;
     transition: transform linear 0.2s, opacity linear 0.2s;
+    z-index: 999;
 }
 
 .navbar-mobile div {
     margin-top: 70px;
 }
 
-.navbar-mobile a {
+.navbar-mobile-dropdown {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-mobile-dropdown > li {
     display: block;
-    flex-direction: column;
-    color: whitesmoke;
+    position: relative;
+    width: 100%;
+}
+
+.navbar-mobile-dropdown > li > a {
+    display: block;
     text-decoration: none;
+    color: whitesmoke;
+    font-weight: 600;
     font-size: 18px;
-    font-weight: 700;
-    padding: 15px;
-    margin-left: 0px;
+    padding: 15px 20px;
+    position: relative;
+}
+
+.navbar-mobile-dropdown > li > a i {
+    float: right;
+    margin-top: 2px;
 }
 
 .navbar-mobile-close {
@@ -366,6 +383,38 @@ img {
         padding: 12px 90px;
     }
 
+    .dropdown-mobile {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        background-color: #0b57af;
+        display: none;
+        position: static;
+        width: 100%;
+    }
+
+    .dropdown-mobile li {
+        display: block;
+    }
+
+    .dropdown-mobile li:last-child {
+        border-bottom: none;
+    }
+
+    .dropdown-mobile a {
+        display: block;
+        text-decoration: none;
+        color: whitesmoke;
+        font-weight: 500;
+        font-size: 16px;
+        padding: 12px 30px;
+        background-color: #0b57af;
+    }
+
+    .dropdown-mobile a:hover {
+        background-color: #1565c0;
+    }
+
     .navbar-mobile a{
         font-size: 16px;
     }
@@ -571,8 +620,36 @@ img {
         padding: 12px 90px;
     }
 
+    .dropdown-mobile {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        background-color: #094e9d;
+        display: none;
+        position: static;
+        width: 100%;
+    }
+
+    .dropdown-mobile li {
+        display: block;
+    }
+
+    .dropdown-mobile li:last-child {
+        border-bottom: none;
+    }
+
+    .dropdown-mobile a {
+        display: block;
+        text-decoration: none;
+        color: whitesmoke;
+        font-weight: 500;
+        font-size: 16px;
+        padding: 12px 30px;
+        background-color: #094e9d;
+    }
+
     .navbar-mobile a{
-        font-size: 22px;
+        font-size: 18px;
     }
 
     .navbar-mobile-button {
@@ -815,6 +892,3 @@ img {
         opacity: 1;
     }
 }
-
-
-

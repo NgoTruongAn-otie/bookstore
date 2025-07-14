@@ -6,7 +6,7 @@
     <title>Nhà sách online</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
 </head>
 <body>
 
@@ -15,16 +15,16 @@
             <i class="fa-solid fa-book-open logo"></i>
             <span class="logo-to-text">bookstore</span>
         </div>
-        <nav class="navbar">
+        <nav>
             <ul class="navbar">
                 <li><a href="#">Trang chủ</a></li>
-                <li> <a href="">Tác giả <i class="fa-solid fa-caret-down"></i></a>
+                <li> <a href="">Tác giả <i class="ri-arrow-down-s-line"></i></a>
                     <ul class="dropdown">
-                        <li><a href="./ngyen-nhat-anh-page.html">Nguyễn Nhật Ánh</a></li>
-                        <li><a href="./to-hoai-page.html">Tô Hoài</a></li>
-                        <li><a href="./nam-cao-page.html">Nam Cao</a></li>
-                        <li><a href="./ngo-tat-to-page.html">Ngô Tất Tố</a></li>
-                        <li><a href="./lam-page.html">Lam</a></li>
+                        <li><a href="./author-page/ngyen-nhat-anh-page.html">Nguyễn Nhật Ánh</a></li>
+                        <li><a href="./author-page/to-hoai-page.html">Tô Hoài</a></li>
+                        <li><a href="./author-page/nam-cao-page.html">Nam Cao</a></li>
+                        <li><a href="./author-page/ngo-tat-to-page.html">Ngô Tất Tố</a></li>
+                        <li><a href="./author-page/lam-page.html">Lam</a></li>
                     </ul>
                 </li>
                 <li><a href="">Văn phòng phẩm</a></li>
@@ -45,13 +45,20 @@
                 <i class="fa-solid fa-xmark"></i>
             </label>
             <div>
-                <a href="#">Trang chủ</a>
-                <a href="./ngyen-nhat-anh-page.html">Nguyễn Nhật Ánh</a>
-                <a href="./to-hoai-page.html">Tô Hoài</a>
-                <a href="./nam-cao-page.html">Nam Cao</a>
-                <a href="./ngo-tat-to-page.html">Ngô Tất Tố</a>
-                <a href="./lam-page.html">Lam</a>
-            </ul>
+                <ul class="navbar-mobile-dropdown">
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="">Tác giả <i class="ri-arrow-down-s-line"></i></a>
+                        <ul class="dropdown-mobile">
+                            <li><a href="./author-page/ngyen-nhat-anh-page.html">Nguyễn Nhật Ánh</a></li>
+                            <li><a href="./author-page/to-hoai-page.html">Tô Hoài</a></li>
+                            <li><a href="./author-page/nam-cao-page.html">Nam Cao</a></li>
+                            <li><a href="./author-page/ngo-tat-to-page.html">Ngô Tất Tố</a></li>
+                            <li><a href="./author-page/lam-page.html">Lam</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Văn phòng phẩm</a></li>
+                    <li><a href="">Đồ chơi</a></li>
+                </ul>
             </div>
         </nav>
     </header>
@@ -603,6 +610,21 @@
             </article>    
         </section>
     </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Xử lý dropdown mobile
+            const mobileDropdownTrigger = document.querySelector('.navbar-mobile-dropdown li:nth-child(2) > a');
+            const mobileDropdown = document.querySelector('.dropdown-mobile');
+            
+            if (mobileDropdownTrigger && mobileDropdown) {
+                mobileDropdownTrigger.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    mobileDropdown.style.display = mobileDropdown.style.display === 'block' ? 'none' : 'block';
+                });
+            }
+        });
+    </script>
 </body>
 
 </html>
