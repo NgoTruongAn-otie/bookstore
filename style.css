@@ -389,11 +389,12 @@ img {
     font-weight: 500;
 }
 
-.toggle-button button:hover {
+#toggle-button.active {
     background-color: white;
     color: #033875;
-    border:2px solid #033875;
+    border: 2px solid #033875;
 }
+
 
 
 /* Mobile */
@@ -627,6 +628,10 @@ img {
 
     .suggestion-container .product:nth-child(-n+3) { 
         border-top: 1px solid rgba(220, 218, 218, 0.55);
+    }
+
+    .toggle-button button {
+        font-size: 12px;
     }
 }
 
