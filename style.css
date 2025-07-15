@@ -369,6 +369,33 @@ img {
     margin-bottom: 20px;
 }
 
+.hide-product {
+    display: none;
+}
+
+.toggle-button {
+    width: 100%; 
+    text-align: center; 
+    margin: 20px;
+}
+
+.toggle-button button {
+    font-size: 18px;
+    background-color: #033875;
+    color: whitesmoke;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.toggle-button button:hover {
+    background-color: white;
+    color: #033875;
+    border:2px solid #033875;
+}
+
+
 /* Mobile */
 @media only screen and (max-width: 767px) {
     .logo {
@@ -554,24 +581,22 @@ img {
     .text {
         margin-top: -5px;
         width: 90%;
-    }
+    } 
 
     .suggestion-container {
-        padding: 10px 0px ;
-        margin: 0;
-        align-items: center;
-        justify-content: center;
-        margin: 20px;
+        padding: 10px 10px ;
+        justify-content: flex-start;
+        margin: 20px;   
     }
 
     .suggestion-container .product {
-        width: 31%;
+        width: 32%;
         font-size: 12px;
     }
 
     .suggestion-container .product figure {
         padding: 0;
-        margin: 0px;
+        margin: 0;
     }
 
     .suggestion-container .product a {
