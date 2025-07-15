@@ -380,7 +380,7 @@ img {
     }
 
     .header {
-        padding: 12px 90px;
+        padding: 12px 70px;
     }
 
     .dropdown-mobile {
@@ -439,13 +439,12 @@ img {
 
     .container {
         padding: 0;
-        margin: 0;
-        align-items: center;
-        justify-content: center;
+        margin: 20px 0 0 0;
+        justify-content: flex-start;
     }
 
     .product {
-        width: 48%;
+        width: 49%;
         padding: 0;
         font-size: 15px;
         margin: 2px;
@@ -617,7 +616,7 @@ img {
     }
 
     .header {
-        padding: 12px 90px;
+        padding: 12px 70px;
     }
 
     .dropdown-mobile {
@@ -671,14 +670,12 @@ img {
     }
 
     .container {
-        padding: 0;
         margin: 0;
-        align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
     }
 
     .product {
-        width: 31%;
+        width: 32.76%;
         padding: 0;
         font-size: 18px;
         margin: 2px;
