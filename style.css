@@ -569,7 +569,7 @@ img {
     }
 
     .product-information h2 {
-        font-size: 20px;
+        font-size: 21px;
         width: 300px;
         display: flex;
         flex-wrap: wrap;
@@ -585,23 +585,22 @@ img {
         width: 100%;
     }
 
-    /*1*/
     .price-container {
         gap: 0px;
     }
-    /*2*/
+
     .current-price {
-        font-size: 19px;
+        font-size: 22px;
         min-width: 105px;
     }
     
     .original-price {
-        font-size: 12px;
+        font-size: 13px;
         min-width: 70px;
     }
 
     .discount-padding {
-        font-size: 8px;
+        font-size: 10px;
     }
 
     .content-container {
