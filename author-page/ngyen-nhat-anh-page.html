@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <script src="../script.js"></script>
     <style>
         h1 {
             text-align: center; 
@@ -72,7 +73,7 @@
                         </ul>
                     </li>
                     <li> <a href="">Văn phòng phẩm <i class="ri-arrow-down-s-line"></i></a>
-                        <ul class="dropdown">
+                        <ul class="dropdown-mobile">
                             <li><a href="../stationery-page/bop-viet.html">Bóp viết</a></li>
                             <li><a href="../stationery-page/gom.html">Gôm</a></li>
                             <li><a href="../stationery-page/tap.html">Tập HS-SV</a></li>
@@ -196,20 +197,6 @@
         </section>
     </main>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Xử lý dropdown mobile
-            const mobileDropdownTrigger = document.querySelector('.navbar-mobile-dropdown li:nth-child(2) > a');
-            const mobileDropdown = document.querySelector('.dropdown-mobile');
-            
-            if (mobileDropdownTrigger && mobileDropdown) {
-                mobileDropdownTrigger.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    mobileDropdown.style.display = mobileDropdown.style.display === 'block' ? 'none' : 'block';
-                });
-            }
-        });
-    </script>
 </body>
 
 </html>

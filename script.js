@@ -1,46 +1,32 @@
-    document.addEventListener('DOMContentLoaded', function() {
-            // Xử lý dropdown mobile
-            const mobileDropdownTrigger = document.querySelector('.navbar-mobile-dropdown li:nth-child(2) > a');
-            const mobileDropdown = document.querySelector('.dropdown-mobile');
-            
-            if (mobileDropdownTrigger && mobileDropdown) {
-                mobileDropdownTrigger.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    mobileDropdown.style.display = mobileDropdown.style.display === 'block' ? 'none' : 'block';
-                });
-            }
-        });
+document.addEventListener("DOMContentLoaded", function () {
+    const dropdownLinks = document.querySelectorAll('.navbar-mobile-dropdown > li > a');
 
-        document.addEventListener('DOMContentLoaded', function() {
-            // Xử lý dropdown mobile
-            const mobileDropdownTrigger = document.querySelector('.navbar-mobile-dropdown li:nth-child(3) > a');
-            const mobileDropdown = document.querySelector('.dropdown-mobile');
-            
-            if (mobileDropdownTrigger && mobileDropdown) {
-                mobileDropdownTrigger.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    mobileDropdown.style.display = mobileDropdown.style.display === 'block' ? 'none' : 'block';
-                });
-            }
-        });
+    dropdownLinks.forEach(link => {
+        const parentLi = link.parentElement;
+        const submenu = parentLi.querySelector('ul');
 
-    document.addEventListener("DOMContentLoaded", function () {
-            const toggleButton = document.getElementById("toggle-button");
-            const hiddenProducts = document.querySelectorAll(".hide-product");
-
-            let expanded = false;
-
-            toggleButton.addEventListener("click", function () {
-                hiddenProducts.forEach(item => {
-                    item.style.display = expanded ? "none" : "block";
-                });
-
-                toggleButton.textContent = expanded ? "Xem thêm" : "Thu gọn";
-                expanded = !expanded;
+        if (submenu) {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                const isShown = submenu.style.display === 'block';
+                submenu.style.display = isShown ? 'none' : 'block';
             });
-        });
-    const button = document.getElementById("toggle-button");
-
-    button.addEventListener("click", function () {
-    button.classList.toggle("active");
+        }
     });
+
+    const toggleButton = document.getElementById("toggle-button");
+    const hiddenProducts = document.querySelectorAll(".hide-product");
+    let expanded = false;
+
+    if (toggleButton) {
+        toggleButton.addEventListener("click", function () {
+            hiddenProducts.forEach(item => {
+                item.style.display = expanded ? "none" : "block";
+            });
+
+            toggleButton.textContent = expanded ? "Xem thêm" : "Thu gọn";
+            toggleButton.classList.toggle("active");
+            expanded = !expanded;
+        });
+    }
+});

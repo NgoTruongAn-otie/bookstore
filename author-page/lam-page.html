@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <script src="../script.js"></script>
     <style>
         h1 {
             text-align: center; 
@@ -22,16 +23,16 @@
             <i class="fa-solid fa-book-open logo"></i>
             <span class="logo-to-text">bookstore</span>
         </div>
-        <nav class="navbar">
+        <nav>
             <ul class="navbar">
                 <li><a href="../index.html">Trang chủ</a></li>
-                <li> <a href="#">Tác giả <i class="ri-arrow-down-s-line"></i></a>
+                <li> <a href="">Tác giả <i class="ri-arrow-down-s-line"></i></a>
                     <ul class="dropdown">
                         <li><a href="./ngyen-nhat-anh-page.html">Nguyễn Nhật Ánh</a></li>
                         <li><a href="./to-hoai-page.html">Tô Hoài</a></li>
                         <li><a href="./nam-cao-page.html">Nam Cao</a></li>
                         <li><a href="./ngo-tat-to-page.html">Ngô Tất Tố</a></li>
-                        <li><a href="#">Lam</a></li>
+                        <li><a href="./lam-page.html">Lam</a></li>
                     </ul>
                 </li>
                 <li> <a href="">Văn phòng phẩm <i class="ri-arrow-down-s-line"></i></a>
@@ -51,7 +52,7 @@
             <i class="fa-solid fa-bars"></i>
         </label>
 
-        <input type="checkbox" hidden name="" class="navbar-input" id="navbar-mobile-input">
+        <input type="checkbox" hidden class="navbar-input" id="navbar-mobile-input">
 
         <label for="navbar-mobile-input" class="navbar-overlay"></label>
 
@@ -68,14 +69,14 @@
                             <li><a href="./to-hoai-page.html">Tô Hoài</a></li>
                             <li><a href="./nam-cao-page.html">Nam Cao</a></li>
                             <li><a href="./ngo-tat-to-page.html">Ngô Tất Tố</a></li>
-                            <li><a href="#">Lam</a></li>
+                            <li><a href="./lam-page.html">Lam</a></li>
                         </ul>
                     </li>
                     <li> <a href="">Văn phòng phẩm <i class="ri-arrow-down-s-line"></i></a>
-                        <ul class="dropdown">
+                        <ul class="dropdown-mobile">
                             <li><a href="../stationery-page/bop-viet.html">Bóp viết</a></li>
                             <li><a href="../stationery-page/gom.html">Gôm</a></li>
-                            <li><a href="../stationery-page/tap.html">Tập HS-SV</a></li>
+                            <li><a href="./stationery-page./tap.html">Tập HS-SV</a></li>
                             <li><a href="../stationery-page/thuoc.html">Thước kẻ</a></li>
                             <li><a href="../stationery-page/viet.html">Viết</a></li>
                         </ul>
@@ -133,20 +134,6 @@
         </section>
     </main>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Xử lý dropdown mobile
-            const mobileDropdownTrigger = document.querySelector('.navbar-mobile-dropdown li:nth-child(2) > a');
-            const mobileDropdown = document.querySelector('.dropdown-mobile');
-            
-            if (mobileDropdownTrigger && mobileDropdown) {
-                mobileDropdownTrigger.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    mobileDropdown.style.display = mobileDropdown.style.display === 'block' ? 'none' : 'block';
-                });
-            }
-        });
-    </script>
 </body>
 
 </html>

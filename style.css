@@ -390,8 +390,8 @@ img {
 }
 
 #toggle-button.active {
-    background-color: white;
-    color: #033875;
+    background-color: #033875;
+    color: whitesmoke;
     border: 2px solid #033875;
 }
 
