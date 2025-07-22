@@ -587,26 +587,21 @@ img {
 
     /*1*/
     .price-container {
-        min-width: 200px;
-        gap: 10px;
-        border: 2px solid red;
+        gap: 0px;
     }
     /*2*/
     .current-price {
         font-size: 19px;
         min-width: 105px;
-        border: 2px solid blue;
     }
     
     .original-price {
         font-size: 12px;
         min-width: 70px;
-        border: 2px solid green;
     }
 
     .discount-padding {
         font-size: 8px;
-        border: 2px solid orange;
     }
 
     .content-container {
