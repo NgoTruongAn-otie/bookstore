@@ -569,7 +569,7 @@ img {
     }
 
     .product-information h2 {
-        font-size: 23px;
+        font-size: 20px;
         width: 300px;
         display: flex;
         flex-wrap: wrap;
@@ -577,26 +577,36 @@ img {
         margin-top: 10px;
     }
 
+    .product-options {
+        display: none;
+    }
+
     .product-container figure {
         width: 100%;
     }
 
+    /*1*/
     .price-container {
-        gap: 0px;
+        min-width: 200px;
+        gap: 10px;
+        border: 2px solid red;
     }
-
+    /*2*/
     .current-price {
-        font-size: 22px;
-        min-width: 105px ;
+        font-size: 19px;
+        min-width: 105px;
+        border: 2px solid blue;
     }
-
+    
     .original-price {
-        font-size: 13px;
+        font-size: 12px;
         min-width: 70px;
+        border: 2px solid green;
     }
 
     .discount-padding {
-        font-size: 10px;
+        font-size: 8px;
+        border: 2px solid orange;
     }
 
     .content-container {
