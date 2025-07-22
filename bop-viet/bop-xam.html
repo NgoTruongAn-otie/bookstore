@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
     <script src="../script.js"></script>
 
     <!-- Sửa title của trang -->
@@ -57,7 +59,76 @@
     </style>
 </head>
 <body>
-   <article class="product-container">
+    <header class="header">
+        <div>
+            <i class="fa-solid fa-book-open logo"></i>
+            <span class="logo-to-text">bookstore</span>
+        </div>
+        <nav>
+            <ul class="navbar">
+                <li><a href="../index.html">Trang chủ</a></li>
+                <li> <a href="">Tác giả <i class="ri-arrow-down-s-line"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="../author-page/ngyen-nhat-anh-page.html">Nguyễn Nhật Ánh</a></li>
+                        <li><a href="../author-page/to-hoai-page.html">Tô Hoài</a></li>
+                        <li><a href="../author-page/nam-cao-page.html">Nam Cao</a></li>
+                        <li><a href="../author-page/ngo-tat-to-page.html">Ngô Tất Tố</a></li>
+                        <li><a href="../author-page/lam-page.html">Lam</a></li>
+                    </ul>
+                </li>
+                <li> <a href="">Văn phòng phẩm <i class="ri-arrow-down-s-line"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="../stationery-page/bop-viet.html">Bóp viết</a></li>
+                        <li><a href="../stationery-page/gom.html">Gôm</a></li>
+                        <li><a href="../stationery-page/tap.html">Tập HS-SV</a></li>
+                        <li><a href="../stationery-page/thuoc.html">Thước kẻ</a></li>
+                        <li><a href="../stationery-page/viet.html">Viết</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Đồ chơi</a></li>
+            </ul>
+        </nav>
+
+        <label for="navbar-mobile-input" class="navbar-mobile-button">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+
+        <input type="checkbox" hidden class="navbar-input" id="navbar-mobile-input">
+
+        <label for="navbar-mobile-input" class="navbar-overlay"></label>
+
+        <nav class="navbar-mobile">
+            <label for="navbar-mobile-input" class="navbar-mobile-close">
+                <i class="fa-solid fa-xmark"></i>
+            </label>
+            <div>
+                <ul class="navbar-mobile-dropdown">
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="">Tác giả <i class="ri-arrow-down-s-line"></i></a>
+                        <ul class="dropdown-mobile">
+                            <li><a href="../author-page/ngyen-nhat-anh-page.html">Nguyễn Nhật Ánh</a></li>
+                            <li><a href="../author-page/to-hoai-page.html">Tô Hoài</a></li>
+                            <li><a href="../author-page/nam-cao-page.html">Nam Cao</a></li>
+                            <li><a href="../author-page/ngo-tat-to-page.html">Ngô Tất Tố</a></li>
+                            <li><a href="../author-page/lam-page.html">Lam</a></li>
+                        </ul>
+                    </li>
+                    <li> <a href="">Văn phòng phẩm <i class="ri-arrow-down-s-line"></i></a>
+                        <ul class="dropdown-mobile">
+                            <li><a href="../stationery-page/bop-viet.html">Bóp viết</a></li>
+                            <li><a href="../stationery-page/gom.html">Gôm</a></li>
+                            <li><a href="../stationery-page/tap.html">Tập HS-SV</a></li>
+                            <li><a href="../stationery-page/thuoc.html">Thước kẻ</a></li>
+                            <li><a href="../stationery-page/viet.html">Viết</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Đồ chơi</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <article class="product-container">
         <figure class="image-container">
 
             <!-- Sửa ảnh -->
@@ -90,7 +161,7 @@
                 </div>
             </div>
         </section>
-   </article>
+    </article>
 
     <section class="content-container">
         <article class="text">
