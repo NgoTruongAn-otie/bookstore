@@ -395,7 +395,43 @@ img {
     border: 2px solid #033875;
 }
 
+.product-options {
+    font-size: 19px;
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
 
+.option-buttons {
+    gap: 15px;
+    display: flex;
+}
+
+.option {
+    padding: 7px;
+    background-color: white;
+    border-radius: 3px;
+    border: 1.5px solid #ccc;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    min-width: 60px;
+}
+
+.option a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+.option:hover {
+    border-color: #1a73e8;
+    color: #1a73e8;
+}
+
+.option.active {
+    background-color: #e0f4ff;
+    border-color: #1a73e8;
+}
 
 /* Mobile */
 @media only screen and (max-width: 767px) {

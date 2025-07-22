@@ -26,3 +26,8 @@
                 expanded = !expanded;
             });
         });
+    const button = document.getElementById("toggle-button");
+
+    button.addEventListener("click", function () {
+    button.classList.toggle("active");
+    });
