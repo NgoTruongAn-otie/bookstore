@@ -1,0 +1,44 @@
+.image-container {
+    width: 40%;
+}
+.product-information h2 {
+    font-size: 29px;
+}
+.product-information li  {
+    font-size: 18.5px;
+}
+.current-price {
+    font-size: 28px;
+}
+.original-price {
+    font-size: 18px;
+}
+.discount-padding {
+    font-size: 11px;
+}
+.about-the-work {
+    margin-top: 0px;
+}
+.product-introduce div {
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+    .product-information h2 {
+        font-size: 18px;
+    }
+    .price-container {
+        gap: 5px;
+    }
+    .current-price {
+        font-size: 21px;
+    }
+    .original-price {
+        font-size: 12px;
+        min-width: 64px;
+        margin-top: 3px;
+    }
+    .discount-padding {
+        font-size: 9px;
+    }
+}
