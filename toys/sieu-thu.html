@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../override.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <!-- Sửa title của trang -->
+    <title>Lớp Học Mật Ngữ - Siêu Thú Ngân Hà</title>
+</head>
+<body>
+    <header class="header">
+        <div>
+            <i class="fa-solid fa-book-open logo"></i>
+            <span class="logo-to-text">bookstore</span>
+        </div>
+        <nav>
+            <ul class="navbar">
+                <li><a href="../index.html">Trang chủ</a></li>
+                <li> <a href="">Tác giả <i class="ri-arrow-down-s-line"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="../author-page/ngyen-nhat-anh-page.html">Nguyễn Nhật Ánh</a></li>
+                        <li><a href="../author-page/to-hoai-page.html">Tô Hoài</a></li>
+                        <li><a href="../author-page/nam-cao-page.html">Nam Cao</a></li>
+                        <li><a href="../author-page/ngo-tat-to-page.html">Ngô Tất Tố</a></li>
+                        <li><a href="../author-page/lam-page.html">Lam</a></li>
+                    </ul>
+                </li>
+                <li> <a href="">Văn phòng phẩm <i class="ri-arrow-down-s-line"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="../stationery-page/bop-viet.html">Bóp viết</a></li>
+                        <li><a href="../stationery-page/gom.html">Gôm</a></li>
+                        <li><a href="../stationery-page/tap.html">Tập HS-SV</a></li>
+                        <li><a href="../stationery-page/thuoc.html">Thước kẻ</a></li>
+                        <li><a href="../stationery-page/viet.html">Viết</a></li>
+                    </ul>
+                </li>
+                <li><a href="../toys-page/">Đồ chơi</a></li>
+            </ul>
+        </nav>
+
+        <label for="navbar-mobile-input" class="navbar-mobile-button">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+
+        <input type="checkbox" hidden class="navbar-input" id="navbar-mobile-input">
+
+        <label for="navbar-mobile-input" class="navbar-overlay"></label>
+
+        <nav class="navbar-mobile">
+            <label for="navbar-mobile-input" class="navbar-mobile-close">
+                <i class="fa-solid fa-xmark"></i>
+            </label>
+            <div>
+                <ul class="navbar-mobile-dropdown">
+                    <li><a href="../index.html">Trang chủ</a></li>
+                    <li><a href="">Tác giả <i class="ri-arrow-down-s-line"></i></a>
+                        <ul class="dropdown-mobile">
+                            <li><a href="../author-page/ngyen-nhat-anh-page.html">Nguyễn Nhật Ánh</a></li>
+                            <li><a href="../author-page/to-hoai-page.html">Tô Hoài</a></li>
+                            <li><a href="../author-page/nam-cao-page.html">Nam Cao</a></li>
+                            <li><a href="../author-page/ngo-tat-to-page.html">Ngô Tất Tố</a></li>
+                            <li><a href="../author-page/lam-page.html">Lam</a></li>
+                        </ul>
+                    </li>
+                    <li> <a href="">Văn phòng phẩm <i class="ri-arrow-down-s-line"></i></a>
+                        <ul class="dropdown-mobile">
+                            <li><a href="../stationery-page/bop-viet.html">Bóp viết</a></li>
+                            <li><a href="../stationery-page/gom.html">Gôm</a></li>
+                            <li><a href="../stationery-page/tap.html">Tập HS-SV</a></li>
+                            <li><a href="../stationery-page/thuoc.html">Thước kẻ</a></li>
+                            <li><a href="../stationery-page/viet.html">Viết</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../toys-page/">Đồ chơi</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+   <article class="product-container">
+        <figure class="image-container">
+
+            <!-- Sửa ảnh -->
+            <img src="../image/toys/sieu-thu.jpg">
+        </figure>
+        <section class="product-information">
+
+            <!-- Sửa tên và chi tiết sách -->
+            <header>
+                <h2>Lớp Học Mật Ngữ - Siêu Thú Ngân Hà</h2>
+            </header> 
+            <ul>
+                <li>Nhà cung cấp: <span>Boardgame Việt Nam</span></li>
+                <li>Thương hiệu: <span>Board Game VN</span></li>
+                <li>Độ tuổi: <span>10+</span></li>
+                <li>Xuất xứ: <span>Việt Nam</span></li>
+            </ul>
+            
+            <!-- Sửa giá -->
+            <div class="price-container">
+                <span class="current-price">699.000 đ</span>
+            </div>
+        </section>
+   </article>
+
+    <section class="content-container">
+        <article class="text">
+            <section class = "about-the-work">
+                <header>
+                    <h3>Mô tả sản phẩm</h3>
+                </header>
+                
+                <!-- Sửa giới thiệu sản phẩm -->
+                <div class="product-introduce">
+                    <div>
+                        <strong>Lớp Học Mật Ngữ - Siêu Thú Ngân Hà</strong>
+                    </div>
+                    <div>   
+                        Tiếp nối thành công vang dội của board game "Cuộc Đua Sao Chổi", “Lớp Học Mật Ngữ” đã quay trở lại với một diện 
+                        mạo hoàn toàn mới, mở ra một chuyến phiêu lưu màu sắc và đầy kỳ bí mang tên: SIÊU THÚ NGÂN HÀ.
+                    </div>
+                    <div> 
+                       Với nét vẽ được thổi hồn ấn tượng bởi chính nhóm tác giả B.R.O cùng lối chơi hài hước, nâng tầm tư duy chiến thuật 
+                       từ Board Game VN, Siêu Thú Ngân Hà chắc chắn sẽ làm thỏa mãn sự kì vọng không chỉ fan bộ truyện Lớp Học Mật Ngữ, 
+                       mà còn còn dành cho  mọi tín đồ đang muốn tìm kiếm một trò chơi cùng gia đình hoặc hội bạn bè thú vị.
+                    </div>
+                    <div>
+                        Trong trò chơi sẽ có 4 siêu thú cổ đại nằm trên bản đồ, đây là 4 siêu thú đặc biệt, bạn không thể dùng đùi gà 
+                        để vào cổng chinh phục, bạn phải dùng các quái thú nhỏ để vào cổng. Mỗi lượt chỉ được thu phục 1 siêu thú.
+                    </div>
+                    <div>
+                        Cuộc đua thu thập siêu thú sẽ càng gay cấn hơn nữa trong những giây phút cuối cùng.
+                    </div>
+                    <div>
+                        Bạn có muốn trở thành người đầu tiên sở hữu bộ board game cực chất này không?
+                    </div>
+            
+                </div>
+            </section>
+         </article>
+    </section>
+    <script src="../script.js"></script>
+</body>
+</html>

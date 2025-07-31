@@ -191,6 +191,7 @@ hr {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    justify-content: space-between;
 }
 
 .product:hover {
@@ -219,7 +220,7 @@ img {
 
 .product-price {
     margin-left: 0; 
-    margin-top: 21px;
+    margin-top: 21px; 
 }
 
 .price {
