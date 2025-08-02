@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <!-- Sửa title của trang -->
+    <title>Thằng Quỷ Nhỏ (2022)</title>
+</head>
+<body>
+    <header class="header">
+        <div>
+            <i class="fa-solid fa-book-open logo"></i>
+            <span class="logo-to-text">bookstore</span>
+        </div>
+        <nav>
+            <ul class="navbar">
+                <li><a href="../index.html">Trang chủ</a></li>
+                <li> <a href="">Tác giả <i class="ri-arrow-down-s-line"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="../author-page/ngyen-nhat-anh-page.html">Nguyễn Nhật Ánh</a></li>
+                        <li><a href="../author-page/to-hoai-page.html">Tô Hoài</a></li>
+                        <li><a href="../author-page/nam-cao-page.html">Nam Cao</a></li>
+                        <li><a href="../author-page/ngo-tat-to-page.html">Ngô Tất Tố</a></li>
+                        <li><a href="../author-page/lam-page.html">Lam</a></li>
+                    </ul>
+                </li>
+                <li> <a href="">Văn phòng phẩm <i class="ri-arrow-down-s-line"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="../stationery-page/bop-viet.html">Bóp viết</a></li>
+                        <li><a href="../stationery-page/gom.html">Gôm</a></li>
+                        <li><a href="../stationery-page/tap.html">Tập HS-SV</a></li>
+                        <li><a href="../stationery-page/thuoc.html">Thước kẻ</a></li>
+                        <li><a href="../stationery-page/viet.html">Viết</a></li>
+                    </ul>
+                </li>
+                <li><a href="../toys-page/toys.html">Đồ chơi</a></li>
+            </ul>
+        </nav>
+
+        <label for="navbar-mobile-input" class="navbar-mobile-button">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+
+        <input type="checkbox" hidden class="navbar-input" id="navbar-mobile-input">
+
+        <label for="navbar-mobile-input" class="navbar-overlay"></label>
+
+        <nav class="navbar-mobile">
+            <label for="navbar-mobile-input" class="navbar-mobile-close">
+                <i class="fa-solid fa-xmark"></i>
+            </label>
+            <div>
+                <ul class="navbar-mobile-dropdown">
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="">Tác giả <i class="ri-arrow-down-s-line"></i></a>
+                        <ul class="dropdown-mobile">
+                            <li><a href="../author-page/ngyen-nhat-anh-page.html">Nguyễn Nhật Ánh</a></li>
+                            <li><a href="../author-page/to-hoai-page.html">Tô Hoài</a></li>
+                            <li><a href="../author-page/nam-cao-page.html">Nam Cao</a></li>
+                            <li><a href="../author-page/ngo-tat-to-page.html">Ngô Tất Tố</a></li>
+                            <li><a href="../author-page/lam-page.html">Lam</a></li>
+                        </ul>
+                    </li>
+                    <li> <a href="">Văn phòng phẩm <i class="ri-arrow-down-s-line"></i></a>
+                        <ul class="dropdown-mobile">
+                            <li><a href="../stationery-page/bop-viet.html">Bóp viết</a></li>
+                            <li><a href="../stationery-page/gom.html">Gôm</a></li>
+                            <li><a href="../stationery-page/tap.html">Tập HS-SV</a></li>
+                            <li><a href="../stationery-page/thuoc.html">Thước kẻ</a></li>
+                            <li><a href="../stationery-page/viet.html">Viết</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../toys-page/toys.html">Đồ chơi</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+   <article class="product-container">
+        <figure class="image-container">
+
+            <!-- Sửa ảnh -->
+            <img src="../image/nna/thang-quy-nho.jpg">
+        </figure>
+        <section class="product-information">
+
+            <!-- Sửa tên và chi tiết sách -->
+            <header>
+                <h2>Thằng Quỷ Nhỏ (2022)</h2>
+            </header> 
+            <ul>
+                <li>Nhà cung cấp: <span>NXB Trẻ</span></li>
+                <li>Tác giả: <span>Nguyễn Nhật Ánh</span></li>
+                <li>Nhà xuất bản: <span>NXB Trẻ</span></li>
+                <li>Hình thức bìa: <span>Bìa Mềm</span></li>
+            </ul>
+            
+            <!-- Sửa giá -->
+            <div class="price-container">
+                <span class="current-price">93.500 đ</span>
+                <span class="original-price">110.000 đ</span>
+                <span class="discount-padding">-15%</span>
+            </div>
+        </section>
+   </article>
+
+    <section class="content-container">
+        <article class="text">
+            <section>
+                    <header>
+                        <h3>Đôi nét về tác giả</h3>
+                    </header>
+
+                    <!-- Sửa giới thiệu tác giả -->
+                    <p>
+                        <strong>Nguyễn Nhật Ánh</strong> (sinh năm 1955), quê ở xã Bình Quế, huyện Thăng Bình, tỉnh Quảng Nam. 
+                        Ông là nhà văn nổi tiếng chuyên viết cho thiếu nhi và tuổi mới lớn. Nguyễn Nhật Ánh bắt đầu sáng tác từ khi 
+                        còn là học sinh, với niềm yêu thích đặc biệt dành cho văn chương. Ngoài vai trò nhà văn, ông còn từng là 
+                        giáo viên, nhà báo và biên tập viên. Nguyễn Nhật Ánh có phong cách viết hóm hỉnh, nhẹ nhàng, giàu cảm xúc, 
+                        thường xoay quanh những kỷ niệm tuổi thơ và học trò. Ông là tác giả của nhiều tác phẩm nổi bật như 
+                        <em>Kính vạn hoa</em>, <em>Cho tôi xin một vé đi tuổi thơ</em>, <em>Tôi thấy hoa vàng trên cỏ xanh</em>... 
+                        Các tác phẩm của ông không chỉ được đông đảo độc giả yêu thích mà còn được chuyển thể thành phim và đưa vào 
+                        chương trình học ở trường.
+                    </p>
+            </section>
+           
+            <section class = "about-the-work">
+                <header>
+                <h3>Về tác phẩm</h3>
+                </header>
+                
+                <!-- Sửa giới thiệu tác phẩm -->
+                <div class="product-introduce">
+                    <div>
+                        <i>Thằng quỷ nhỏ</i> ra mắt năm 2022, là một trong những tác phẩm ghi dấu sự trở lại của <strong>Nguyễn Nhật Ánh</strong> sau thời gian vắng bóng. 
+                        Cuốn sách mở ra một không gian quen thuộc mà độc giả trung thành của ông luôn yêu mến: tuổi học trò, những trò nghịch ngợm 
+                        ngây ngô, cùng sự lắng đọng của những cảm xúc đầu đời. Tuy nhiên, lần này, câu chuyện mang nhiều chất tự sự và chiều sâu tâm lý hơn, 
+                        phản ánh sự trưởng thành trong cách kể chuyện của tác giả.
+                    </div>
+
+                    <div>
+                        Với chất giọng dung dị, giàu nhạc điệu, <strong>Nguyễn Nhật Ánh</strong> đã khắc họa hình ảnh một cậu bé hiếu động nhưng giàu tình cảm. 
+                        Những mẩu chuyện tưởng chừng nhỏ nhặt trong đời sống học đường lại được ông lắp ghép khéo léo thành một bức tranh sống động về tâm hồn trẻ thơ. 
+                        Ở đó, người đọc bắt gặp sự hồn nhiên xen lẫn trăn trở – những điều chỉ có thể nhìn thấy nếu ta thực sự lắng nghe trẻ em bằng trái tim.
+                    </div>
+
+                    <div>
+                        Không chỉ dừng lại ở sự hoài niệm, <i>Thằng quỷ nhỏ</i> còn là một thông điệp nhẹ nhàng mà sâu sắc về việc nuôi dưỡng tâm hồn, 
+                        về cách người lớn nên nhìn nhận và thấu hiểu thế giới trẻ con. <strong>Nguyễn Nhật Ánh</strong> như gửi gắm trong từng trang viết lòng tin rằng 
+                        mỗi đứa trẻ, dù nghịch ngợm đến đâu, cũng đều chứa đựng những ước mơ đẹp đẽ và một trái tim cần được yêu thương đúng cách.
+                    </div>
+
+                    <div>
+                        Với <i>Thằng quỷ nhỏ</i>, <strong>Nguyễn Nhật Ánh</strong> một lần nữa khẳng định vị trí đặc biệt của mình trong lòng độc giả Việt Nam. 
+                        Không ồn ào, không kịch tính, ông âm thầm dẫn dắt người đọc trở về với những năm tháng trong veo, nơi mỗi trò nghịch dại lại 
+                        là một bài học làm người. Đây là một tác phẩm vừa gần gũi vừa sâu sắc, dành cho cả người trẻ và người đã từng trẻ.
+                    </div>
+                </div>
+            </section>
+         </article>
+    </section>
+    <script src="../script.js"></script>
+</body>
+</html>
