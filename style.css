@@ -370,6 +370,13 @@ img {
     margin-bottom: 20px;
 }
 
+.suggestion-title {
+    width: 100%;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
 .hide-product {
     display: none;
 }
@@ -434,6 +441,57 @@ img {
 .option.active {
     background-color: #e0f4ff;
     border-color: #1a73e8;
+}
+
+.option-buttons-index {
+    gap: 5px;
+    display: flex;
+    justify-content: center;
+    margin: -30px 0 20px 0;
+    min-height: 40px;
+}
+
+.option-index a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.option-index:hover a {
+    color: whitesmoke;
+}
+
+.option-index.active a {
+    background-color: #033875;
+    color: whitesmoke;
+}
+
+.option-index {
+    font-weight: 600;
+    padding: 7px;
+    background-color: white;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    min-width: 40px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.option-index:hover {
+    background-color: #033875;
+    color: whitesmoke;
+}
+
+.option-index.active {
+    background-color: #033875;
+    border-color: #033875;
+    color: white;
 }
 
 /* Mobile */
@@ -677,6 +735,10 @@ img {
     .toggle-button button {
         font-size: 12px;
     }
+
+    .option-buttons-index {
+        margin: 15px 0 20px 0;
+    }
 }
 
 /* Tablet */
@@ -853,6 +915,10 @@ img {
     .text {
         margin-top: -5px;
         width: 90%;
+    }
+
+    .option-buttons-index {
+        margin: 5px 0 20px 0;
     }
 }
 

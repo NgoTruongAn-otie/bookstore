@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhà sách online</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<body>
+    <header class="header">
+        <div>
+            <i class="fa-solid fa-book-open logo"></i>
+            <span class="logo-to-text">bookstore</span>
+        </div>
+        <nav>
+            <ul class="navbar">
+                <li><a href="./index.html">Trang chủ</a></li>
+                <li> <a href="">Tác giả <i class="ri-arrow-down-s-line"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="./author-page/ngyen-nhat-anh-page.html">Nguyễn Nhật Ánh</a></li>
+                        <li><a href="./author-page/to-hoai-page.html">Tô Hoài</a></li>
+                        <li><a href="./author-page/nam-cao-page.html">Nam Cao</a></li>
+                        <li><a href="./author-page/ngo-tat-to-page.html">Ngô Tất Tố</a></li>
+                        <li><a href="./author-page/lam-page.html">Lam</a></li>
+                    </ul>
+                </li>
+                <li> <a href="">Văn phòng phẩm <i class="ri-arrow-down-s-line"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="./stationery-page/bop-viet.html">Bóp viết</a></li>
+                        <li><a href="./stationery-page/gom.html">Gôm</a></li>
+                        <li><a href="./stationery-page/tap.html">Tập HS-SV</a></li>
+                        <li><a href="./stationery-page/thuoc.html">Thước kẻ</a></li>
+                        <li><a href="./stationery-page/viet.html">Viết</a></li>
+                    </ul>
+                </li>
+                <li><a href="./toys-page/toys.html">Đồ chơi</a></li>
+            </ul>
+        </nav>
+
+        <label for="navbar-mobile-input" class="navbar-mobile-button">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+
+        <input type="checkbox" hidden class="navbar-input" id="navbar-mobile-input">
+
+        <label for="navbar-mobile-input" class="navbar-overlay"></label>
+
+        <nav class="navbar-mobile">
+            <label for="navbar-mobile-input" class="navbar-mobile-close">
+                <i class="fa-solid fa-xmark"></i>
+            </label>
+            <div>
+                <ul class="navbar-mobile-dropdown">
+                    <li><a href="./index.html">Trang chủ</a></li>
+                    <li><a href="">Tác giả <i class="ri-arrow-down-s-line"></i></a>
+                        <ul class="dropdown-mobile">
+                            <li><a href="./author-page/ngyen-nhat-anh-page.html">Nguyễn Nhật Ánh</a></li>
+                            <li><a href="./author-page/to-hoai-page.html">Tô Hoài</a></li>
+                            <li><a href="./author-page/nam-cao-page.html">Nam Cao</a></li>
+                            <li><a href="./author-page/ngo-tat-to-page.html">Ngô Tất Tố</a></li>
+                            <li><a href="./author-page/lam-page.html">Lam</a></li>
+                        </ul>
+                    </li>
+                    <li> <a href="">Văn phòng phẩm <i class="ri-arrow-down-s-line"></i></a>
+                        <ul class="dropdown-mobile">
+                            <li><a href="./stationery-page/bop-viet.html">Bóp viết</a></li>
+                            <li><a href="./stationery-page/gom.html">Gôm</a></li>
+                            <li><a href="./stationery-page/tap.html">Tập HS-SV</a></li>
+                            <li><a href="./stationery-page/thuoc.html">Thước kẻ</a></li>
+                            <li><a href="./stationery-page/viet.html">Viết</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./toys-page/toys.html">Đồ chơi</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+       <section>
+         <h1>Danh mục sản phẩm</h1>
+        <hr>
+       </section>
+
+       <section class="container">
+            <article class="product">
+                <figure>
+                    <a href="./bop-viet/bop-mau3.html">
+                        <img src="./image/stationery/bop-viet/bop-mau3.jpg">
+                    </a> 
+                </figure>
+                <div>
+                    <h2>
+                        <a href="./bop-viet/bop-mau3.html" class="text-link">
+                            Bóp Viết Vải - Ourfun FX-19637# - Mẫu 3
+                        </a>
+                    </h2>
+                    <div class="product-price">
+                        <p class="price">185.400 đ</p> 
+                        <del>206.000 đ</del>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product">
+                <figure>
+                    <a href="./thuoc/thuoc-9-mon.html">
+                        <img src="./image/stationery/thuoc/thuoc-9-mon.jpg">
+                    </a> 
+                </figure>
+                <div>
+                    <h2>
+                        <a href="./thuoc/thuoc-9-mon.html" class="text-link">
+                            Bộ Thước Eke 9 Món Học Toán Hộp Thiếc - Helix
+                        </a>
+                    </h2>
+                    <div class="product-price">
+                        <p class="price">110.500 đ</p> 
+                        <del>130.000 đ</del>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section>
+            <div class="option-buttons-index">
+                <a href="./index.html" class="option-index">1</a>
+                <a href="./index-page-2.html" class="option-index">2</a>
+                <a href="./index-page-3.html" class="option-index">3</a>
+                <a href="./index-page-4.html" class="option-index">4</a>
+                <a href="#" class="option-index active">5</a>
+            </div>
+        </section>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
