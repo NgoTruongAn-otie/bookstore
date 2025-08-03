@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <!-- Sửa title của trang -->
+    <title>Tuyển Tập Nam Cao (Tái Bản 2022)</title>
+</head>
+<body>
+    <header class="header">
+        <div>
+            <i class="fa-solid fa-book-open logo"></i>
+            <span class="logo-to-text">bookstore</span>
+        </div>
+        <nav>
+            <ul class="navbar">
+                <li><a href="../index.html">Trang chủ</a></li>
+                <li> <a href="">Tác giả <i class="ri-arrow-down-s-line"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="../author-page/ngyen-nhat-anh-page.html">Nguyễn Nhật Ánh</a></li>
+                        <li><a href="../author-page/to-hoai-page.html">Tô Hoài</a></li>
+                        <li><a href="../author-page/nam-cao-page.html">Nam Cao</a></li>
+                        <li><a href="../author-page/ngo-tat-to-page.html">Ngô Tất Tố</a></li>
+                        <li><a href="../author-page/lam-page.html">Lam</a></li>
+                    </ul>
+                </li>
+                <li> <a href="">Văn phòng phẩm <i class="ri-arrow-down-s-line"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="../stationery-page/bop-viet.html">Bóp viết</a></li>
+                        <li><a href="../stationery-page/gom.html">Gôm</a></li>
+                        <li><a href="../stationery-page/tap.html">Tập HS-SV</a></li>
+                        <li><a href="../stationery-page/thuoc.html">Thước kẻ</a></li>
+                        <li><a href="../stationery-page/viet.html">Viết</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Đồ chơi</a></li>
+            </ul>
+        </nav>
+
+        <label for="navbar-mobile-input" class="navbar-mobile-button">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+
+        <input type="checkbox" hidden class="navbar-input" id="navbar-mobile-input">
+
+        <label for="navbar-mobile-input" class="navbar-overlay"></label>
+
+        <nav class="navbar-mobile">
+            <label for="navbar-mobile-input" class="navbar-mobile-close">
+                <i class="fa-solid fa-xmark"></i>
+            </label>
+            <div>
+                <ul class="navbar-mobile-dropdown">
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="">Tác giả <i class="ri-arrow-down-s-line"></i></a>
+                        <ul class="dropdown-mobile">
+                            <li><a href="../author-page/ngyen-nhat-anh-page.html">Nguyễn Nhật Ánh</a></li>
+                            <li><a href="../author-page/to-hoai-page.html">Tô Hoài</a></li>
+                            <li><a href="../author-page/nam-cao-page.html">Nam Cao</a></li>
+                            <li><a href="../author-page/ngo-tat-to-page.html">Ngô Tất Tố</a></li>
+                            <li><a href="../author-page/lam-page.html">Lam</a></li>
+                        </ul>
+                    </li>
+                    <li> <a href="">Văn phòng phẩm <i class="ri-arrow-down-s-line"></i></a>
+                        <ul class="dropdown-mobile">
+                            <li><a href="../stationery-page/bop-viet.html">Bóp viết</a></li>
+                            <li><a href="../stationery-page/gom.html">Gôm</a></li>
+                            <li><a href="../stationery-page/tap.html">Tập HS-SV</a></li>
+                            <li><a href="../stationery-page/thuoc.html">Thước kẻ</a></li>
+                            <li><a href="../stationery-page/viet.html">Viết</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Đồ chơi</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+   <article class="product-container">
+        <figure class="image-container">
+
+            <!-- Sửa ảnh -->
+            <img src="../image/nam cao/tuyen-tap-nam-cao.jpg">
+        </figure>
+        <section class="product-information">
+
+            <!-- Sửa tên và chi tiết sách -->
+            <header>
+                <h2>Tuyển Tập Nam Cao (Tái Bản 2022)</h2>
+            </header> 
+            <ul>
+                <li>Nhà cung cấp: <span>Nhà Sách Minh Thắng</span></li>
+                <li>Tác giả: <span>Nam Cao</span></li>
+                <li>Nhà xuất bản: <span>Văn học</span></li>
+                <li>Hình thức bìa: <span>Bìa Mềm</span></li>
+                <li>Ngôn Ngữ: <span>Tiếng Việt</span></li>
+            </ul>
+            
+            <!-- Sửa giá -->
+            <div class="price-container">
+                <span class="current-price">108,000 đ</span>
+                <span class="original-price">135,000 đ</span>
+                <span class="discount-padding">-20%</span>
+            </div>
+        </section>
+   </article>
+
+    <section class="content-container">
+        <article class="text">
+            <section>
+                    <header>
+                        <h3>Đôi nét về tác giả</h3>
+                    </header>
+
+                    <!-- Sửa giới thiệu tác giả -->
+                    <p>
+                        Nam Cao (nguyên danh Trần Hữu Tri, thánh danh Giuse, 29 tháng 10, 
+                        năm 1915 hoặc 1917 - 30 tháng 11 năm 1951) là một nhà văn, nhà báo và 
+                        cũng là một chiến sĩ, liệt sĩ,Anh hùng Lực lượng vũ trang nhân dân Việt 
+                        Nam(truy tặng năm 1996). Ông là nhà văn hiện thực lớn (trước Cách mạng Tháng Tám), 
+                        một nhà báo kháng chiến (sau Cách mạng), một trong những nhà văn người Việt Nam 
+                        tiêu biểu nhất thế kỷ 20. Nam Cao có nhiều đóng góp quan trọng đối với việc hoàn 
+                        thiện phong cách truyện ngắn và tiểu thuyết Việt Nam ở nửa đầu thế kỷ 20.
+
+                    </p>
+            </section>
+           
+            <section class = "about-the-work">
+                <header>
+                <h3>Về tác phẩm</h3>
+                </header>
+                
+                <!-- Sửa giới thiệu tác phẩm -->
+                <div class="product-introduce">
+                    <div>
+       <i>Tuyển tập Nam Cao</i> là một tập hợp những tác phẩm đặc sắc nhất của <strong>Nam Cao</strong>,
+       phản ánh sâu sắc hiện thực xã hội Việt Nam trước Cách mạng tháng Tám. 
+       Qua nhiều truyện ngắn và tiểu thuyết tiêu biểu, tuyển tập cho thấy rõ phong cách nghệ thuật độc đáo và
+        tư tưởng nhân đạo sâu sắc của nhà văn.
+</div>
+
+<div>
+       Các tác phẩm trong tuyển tập như <i>Chí Phèo</i>, <i>Lão Hạc</i>, <i>Đời thừa</i>, <i>Sống mòn</i>... 
+       đều thể hiện rõ nỗi đau khổ, bế tắc của những con người sống dưới đáy xã hội - 
+       từ người nông dân hiền lành đến người trí thức mang lý tưởng sống nhưng bị thực tại tàn nhẫn vùi dập.
+</div>
+
+<div>
+       Điều làm nên giá trị bền vững cho <i>Tuyển tập Nam Cao</i> chính là lối viết chân thực, 
+       ngôn ngữ gần gũi đời thường, cùng khả năng phân tích tâm lý nhân vật vô cùng sâu sắc. 
+      <strong>Nam Cao</strong> không chỉ phản ánh hiện thực mà còn mở ra những khía cạnh nhân bản,
+       khơi dậy sự cảm thông và thức tỉnh lương tri con người.
+</div>
+
+<div>
+    <i>Tuyển tập Nam Cao</i> không chỉ là một tài liệu văn học quý giá, mà còn là cánh cửa giúp
+       người đọc hiểu sâu hơn về xã hội Việt Nam giai đoạn trước cách mạng, 
+       cũng như những trăn trở lớn lao của một nhà văn luôn đặt con người vào trung tâm của sáng tạo nghệ thuật.
+</div>
+
+                </div>
+            </section>
+         </article>
+    </section>
+    <script src="../script.js"></script>
+</body>
+</html>
+
