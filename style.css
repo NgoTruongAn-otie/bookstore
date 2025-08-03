@@ -821,7 +821,7 @@ img {
         -webkit-tap-highlight-color: transparent;
     }
 
-    .container .product:nth-child(-n+3) {
+    .container .product:nth-child(-n+4) {
         border-top: 1px solid rgba(220, 218, 218, 0.55);
     }
 
@@ -919,6 +919,10 @@ img {
 
     .option-buttons-index {
         margin: 5px 0 20px 0;
+    }
+
+    .suggestion-container .product:nth-child(-n+4) { 
+        border-top: 1px solid rgba(220, 218, 218, 0.55);
     }
 }
 
