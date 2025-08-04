@@ -33,6 +33,10 @@ let expanded = false;
 
 
 function addToCart(product) {
+    if (product.image.startsWith('../')) {
+        product.image = product.image.replace('../', '');
+    }
+    
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
     const existingItem = cart.find(item => item.id === product.id);
