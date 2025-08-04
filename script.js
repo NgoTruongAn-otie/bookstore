@@ -60,6 +60,7 @@ function updateCartCount() {
     if (cartCountMobile) cartCountMobile.innerText = totalItems;
 }
 
+
 document.addEventListener('DOMContentLoaded', updateCartCount);
 
 function formatCurrency(value) {
