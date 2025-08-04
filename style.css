@@ -22,13 +22,12 @@ body {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-
 }
 
 .logo {
     font-size: 30px;
     color: white;
-    margin-left: 55px
+    margin-left: 55px;
 }
 
 .logo-to-text {
@@ -1045,4 +1044,91 @@ img {
     to {
         opacity: 1;
     }
+}
+
+.add-to-cart-btn {
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #cc5200;
+}
+
+.cart-container {
+    max-width: 960px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 8px;
+}
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    border-bottom: 1px solid #ddd;
+    padding: 1rem 0;
+}
+.cart-item img {
+    width: 80px;
+    height: auto;
+}
+.cart-details {
+    flex-grow: 1;
+}
+.cart-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.remove-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-top: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.total-container {
+    text-align: right;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.checkout-btn {
+    margin-top: 1rem;
+    background: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.cart-icon {
+  position: relative;
+  text-decoration: none;
+  color: white; /* màu chữ trắng cho toàn bộ */
+  font-size: 24px; /* kích thước icon */
+  margin-right: 55px;
+}
+
+.cart-icon #cart-count {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+  font-weight: bold;
 }
