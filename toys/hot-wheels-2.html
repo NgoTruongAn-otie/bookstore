@@ -44,7 +44,10 @@
         <label for="navbar-mobile-input" class="navbar-mobile-button">
             <i class="fa-solid fa-bars"></i>
         </label>
-
+        <a href="../gio-hang.html" class="cart-icon-mobile">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cart-count-mobile">0</span>
+        </a>
         <input type="checkbox" hidden class="navbar-input" id="navbar-mobile-input">
 
         <label for="navbar-mobile-input" class="navbar-overlay"></label>
@@ -78,6 +81,10 @@
                 </ul>
             </div>
         </nav>
+        <a href="../gio-hang.html" class="cart-icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cart-count">0</span>
+        </a>
     </header>
 
    <article class="product-container">
@@ -104,6 +111,21 @@
                 <span class="current-price">62.000 đ</span>
                 <span class="original-price">69.000 đ</span>
                 <span class="discount-padding">-10%</span>
+            </div>
+
+            <div class="cart-action">
+                <button 
+                    class="add-to-cart-btn"
+                    onclick="addToCart({
+                        id: 'hot-wheels-2',
+                        name: 'Siêu Xe Hot Wheels C4982 - 207/250 - Ravenger S/T',
+                        price: 62000,
+                        image: '../image/toys/xe-hotwheels-2.jpg',
+                        quantity: 1
+                    })"
+                >
+                    Thêm vào giỏ hàng
+                </button>
             </div>
         </section>
    </article>

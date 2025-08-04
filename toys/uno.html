@@ -40,7 +40,10 @@
                 <li><a href="../toys-page/">Đồ chơi</a></li>
             </ul>
         </nav>
-
+        <a href="../gio-hang.html" class="cart-icon-mobile">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cart-count-mobile">0</span>
+        </a>
         <label for="navbar-mobile-input" class="navbar-mobile-button">
             <i class="fa-solid fa-bars"></i>
         </label>
@@ -78,6 +81,10 @@
                 </ul>
             </div>
         </nav>
+        <a href="../gio-hang.html" class="cart-icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cart-count">0</span>
+        </a>
     </header>
 
    <article class="product-container">
@@ -101,9 +108,24 @@
             
             <!-- Sửa giá -->
             <div class="price-container">
-                <span class="current-price">152.00 đ</span>
+                <span class="current-price">152.000 đ</span>
                 <span class="original-price">169.000 đ</span>
                 <span class="discount-padding">-10%</span>
+            </div>
+
+            <div class="cart-action">
+                <button 
+                    class="add-to-cart-btn"
+                    onclick="addToCart({
+                        id: 'uno',
+                        name: 'Đồ Chơi Cờ Trí Tuệ UNO W2085',
+                        price: 152000,
+                        image: '../image/toys/uno.jpg',
+                        quantity: 1
+                    })"
+                >
+                    Thêm vào giỏ hàng
+                </button>
             </div>
         </section>
    </article>

@@ -40,6 +40,10 @@
                 <li><a href="">Đồ chơi</a></li>
             </ul>
         </nav>
+        <a href="../gio-hang.html" class="cart-icon-mobile">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cart-count-mobile">0</span>
+        </a>
 
         <label for="navbar-mobile-input" class="navbar-mobile-button">
             <i class="fa-solid fa-bars"></i>
@@ -78,6 +82,10 @@
                 </ul>
             </div>
         </nav>
+        <a href="../gio-hang.html" class="cart-icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cart-count">0</span>
+        </a>
     </header>
 
     <article class="product-container">
@@ -90,7 +98,7 @@
 
             <!-- Sửa tên và chi tiết -->
             <header>
-                <h2>Bút Gel Bấm Delight 0.5 mm - Deli EG118-DP - Mực Tím Hồng</h2>
+                <h2>Bút Gel Bấm Delight 0.5 mm - Deli EG118-DP - Mực  Hồng</h2>
             </header> 
             <ul>
                 <li>Nhà cung cấp: <span>Cty Hoàng Bách Nguyên</span></li>
@@ -113,6 +121,20 @@
                 </div>
             </div>
             
+            <div class="cart-action">
+                <button 
+                    class="add-to-cart-btn"
+                    onclick="addToCart({
+                        id: 'gel-hong',
+                        name: 'Bút Gel Bấm Delight 0.5 mm - Deli EG118-DP - Mực  Hồng',
+                        price: 8250,
+                        image: '../image/stationery/viet/gel-hong.jpg',
+                        quantity: 1
+                    })"
+                >
+                    Thêm vào giỏ hàng
+                </button>
+            </div>
         </section>
     </article>
 

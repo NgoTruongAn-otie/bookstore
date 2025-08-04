@@ -40,6 +40,10 @@
                 <li><a href="../toys-page/">Đồ chơi</a></li>
             </ul>
         </nav>
+        <a href="../gio-hang.html" class="cart-icon-mobile">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cart-count-mobile">0</span>
+        </a>
 
         <label for="navbar-mobile-input" class="navbar-mobile-button">
             <i class="fa-solid fa-bars"></i>
@@ -78,6 +82,10 @@
                 </ul>
             </div>
         </nav>
+        <a href="../gio-hang.html" class="cart-icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cart-count">0</span>
+        </a>
     </header>
 
    <article class="product-container">
@@ -104,6 +112,21 @@
                 <span class="current-price">92.500 đ</span>
                 <span class="original-price">103.000 đ</span>
                 <span class="discount-padding">-10%</span>
+            </div>
+
+            <div class="cart-action">
+                <button 
+                    class="add-to-cart-btn"
+                    onclick="addToCart({
+                        id: 'co-vua',
+                        name: 'Cờ Vua Quốc Tế SATO',
+                        price: 92500,
+                        image: '../image/toys/co-vua.jpg',
+                        quantity: 1
+                    })"
+                >
+                    Thêm vào giỏ hàng
+                </button>
             </div>
         </section>
    </article>

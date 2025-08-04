@@ -38,7 +38,10 @@
                 <li><a href="../toys-page/toys.html">Đồ chơi</a></li>
             </ul>
         </nav>
-
+        <a href="../gio-hang.html" class="cart-icon-mobile">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cart-count-mobile">0</span>
+        </a>
         <label for="navbar-mobile-input" class="navbar-mobile-button">
             <i class="fa-solid fa-bars"></i>
         </label>
@@ -76,6 +79,10 @@
                 </ul>
             </div>
         </nav>
+        <a href="../gio-hang.html" class="cart-icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cart-count">0</span>
+        </a>
     </header>
     <article class="product-container">
         <figure class="image-container">
@@ -97,6 +104,21 @@
                 <span class="current-price">58,000 đ</span>
                 <span class="original-price">75,000 đ</span>
                 <span class="discount-padding">-23%</span>
+            </div>
+
+            <div class="cart-action">
+                <button 
+                    class="add-to-cart-btn"
+                    onclick="addToCart({
+                        id: 'chuyen-de-quen',
+                        name: 'Chuyện Để Quên - Tô Hoài',
+                        price: 58000,
+                        image: '../image/to hoai/chuyen-de-quen_bia.jpg',
+                        quantity: 1
+                    })"
+                >
+                    Thêm vào giỏ hàng
+                </button>
             </div>
         </section>
     </article>

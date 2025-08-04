@@ -40,7 +40,10 @@
                 <li><a href="../toys-page/">Đồ chơi</a></li>
             </ul>
         </nav>
-
+        <a href="../gio-hang.html" class="cart-icon-mobile">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cart-count-mobile">0</span>
+        </a>
         <label for="navbar-mobile-input" class="navbar-mobile-button">
             <i class="fa-solid fa-bars"></i>
         </label>
@@ -78,6 +81,10 @@
                 </ul>
             </div>
         </nav>
+        <a href="../gio-hang.html" class="cart-icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cart-count">0</span>
+        </a>
     </header>
 
    <article class="product-container">
@@ -102,6 +109,21 @@
             <!-- Sửa giá -->
             <div class="price-container">
                 <span class="current-price">699.000 đ</span>
+            </div>
+
+            <div class="cart-action">
+                <button 
+                    class="add-to-cart-btn"
+                    onclick="addToCart({
+                        id: 'sieu-thu',
+                        name: 'Lớp Học Mật Ngữ - Siêu Thú Ngân Hà',
+                        price: 699000,
+                        image: '../image/toys/sieu-thu.jpg',
+                        quantity: 1
+                    })"
+                >
+                    Thêm vào giỏ hàng
+                </button>
             </div>
         </section>
    </article>

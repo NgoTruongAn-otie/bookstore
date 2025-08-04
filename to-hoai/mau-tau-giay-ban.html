@@ -38,7 +38,10 @@
                 <li><a href="../toys-page/toys.html">Đồ chơi</a></li>
             </ul>
         </nav>
-
+        <a href="../gio-hang.html" class="cart-icon-mobile">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cart-count-mobile">0</span>
+        </a>
         <label for="navbar-mobile-input" class="navbar-mobile-button">
             <i class="fa-solid fa-bars"></i>
         </label>
@@ -76,6 +79,10 @@
                 </ul>
             </div>
         </nav>
+        <a href="../gio-hang.html" class="cart-icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cart-count">0</span>
+        </a>
     </header>
 
     <article class="product-container">
@@ -97,6 +104,21 @@
                 <span class="current-price">76,500 đ</span>
                 <span class="original-price">85,000 đ</span>
                 <span class="discount-padding">-10%</span>
+            </div>
+
+            <div class="cart-action">
+                <button 
+                    class="add-to-cart-btn"
+                    onclick="addToCart({
+                        id: 'muc-tau-giay-ban',
+                        name: 'Mực Tàu Giấy Bản',
+                        price: 76500,
+                        image: '../image/to hoai/muc-tau-giay-ban_bia.jpg',
+                        quantity: 1
+                    })"
+                >
+                    Thêm vào giỏ hàng
+                </button>
             </div>
         </section>
     </article>
