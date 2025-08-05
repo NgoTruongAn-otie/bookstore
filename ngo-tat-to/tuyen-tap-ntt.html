@@ -40,6 +40,11 @@
             </ul>
         </nav>
 
+        <a href="../gio-hang.html" class="cart-icon-mobile">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cart-count-mobile">0</span>
+        </a>
+
         <label for="navbar-mobile-input" class="navbar-mobile-button">
             <i class="fa-solid fa-bars"></i>
         </label>
@@ -54,7 +59,7 @@
             </label>
             <div>
                 <ul class="navbar-mobile-dropdown">
-                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="../index.html">Trang chủ</a></li>
                     <li><a href="">Tác giả <i class="ri-arrow-down-s-line"></i></a>
                         <ul class="dropdown-mobile">
                             <li><a href="../author-page/ngyen-nhat-anh-page.html">Nguyễn Nhật Ánh</a></li>
@@ -77,7 +82,13 @@
                 </ul>
             </div>
         </nav>
+        
+        <a href="../gio-hang.html" class="cart-icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cart-count">0</span>
+        </a>
     </header>
+
     <article class="product-container">
         <figure class="image-container">
 
@@ -102,6 +113,21 @@
                 <span class="current-price">115.500 đ</span>
                 <span class="original-price">165,000 đ</span>
                 <span class="discount-padding">-30%</span>
+            </div>
+
+            <div class="cart-action">
+                <button 
+                    class="add-to-cart-btn"
+                    onclick="addToCart({
+                        id: 'tuyen-tap-ntt',
+                        name: 'Tuyển Tập Ngô Tất Tố (2023)',
+                        price: 115500,
+                        image: '/image/ngo tat to/tuyen-tap-ntt.jpg',
+                        quantity: 1
+                    })"
+                >
+                    Thêm vào giỏ hàng
+                </button>
             </div>
         </section>
     </article>

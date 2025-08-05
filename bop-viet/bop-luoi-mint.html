@@ -41,6 +41,11 @@
             </ul>
         </nav>
 
+        <a href="../gio-hang.html" class="cart-icon-mobile">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cart-count-mobile">0</span>
+        </a>
+
         <label for="navbar-mobile-input" class="navbar-mobile-button">
             <i class="fa-solid fa-bars"></i>
         </label>
@@ -55,7 +60,7 @@
             </label>
             <div>
                 <ul class="navbar-mobile-dropdown">
-                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="../index.html">Trang chủ</a></li>
                     <li><a href="">Tác giả <i class="ri-arrow-down-s-line"></i></a>
                         <ul class="dropdown-mobile">
                             <li><a href="../author-page/ngyen-nhat-anh-page.html">Nguyễn Nhật Ánh</a></li>
@@ -78,6 +83,11 @@
                 </ul>
             </div>
         </nav>
+
+        <a href="../gio-hang.html" class="cart-icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="cart-count">0</span>
+        </a>
     </header>
 
     <article class="product-container">
@@ -114,6 +124,20 @@
                 </div>
             </div>
 
+            <div class="cart-action">
+                <button 
+                    class="add-to-cart-btn"
+                    onclick="addToCart({
+                        id: 'bop-luoi-mint',
+                        name: 'Bóp Viết Lưới - Hong Sheng XL6225 - Màu Xanh Mint',
+                        price: 59400,
+                        image: 'image/stationery/bop-viet/bop-luoi-mint.jpg',
+                        quantity: 1
+                    })"
+                >
+                    Thêm vào giỏ hàng
+                </button>
+            </div>
         </section>
     </article>
 

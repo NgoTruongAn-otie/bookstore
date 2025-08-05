@@ -40,6 +40,11 @@
             </ul>
         </nav>
 
+        <a href="../gio-hang.html" class="cart-icon-mobile">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cart-count-mobile">0</span>
+        </a>
+
         <label for="navbar-mobile-input" class="navbar-mobile-button">
             <i class="fa-solid fa-bars"></i>
         </label>
@@ -77,6 +82,10 @@
                 </ul>
             </div>
         </nav>
+        <a href="../gio-hang.html" class="cart-icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="cart-count">0</span>
+        </a>
     </header>
 
    <article class="product-container">
@@ -103,6 +112,21 @@
                 <span class="current-price">81.500 đ</span>
                 <span class="original-price">96.000 đ</span>
                 <span class="discount-padding">-15%</span>
+            </div>
+
+            <div class="cart-action">
+                <button 
+                    class="add-to-cart-btn"
+                    onclick="addToCart({
+                        id: 'di-vong-the-gioi-van-quanh-mot-nguoi',
+                        name: 'Đi vòng thế giới vẫn quanh một người',
+                        price: 81500,
+                        image: 'image/lam/di-vong-the-gioi-quanh-mot-nguoi.jpg',
+                        quantity: 1
+                    })"
+                >
+                    Thêm vào giỏ hàng
+                </button>
             </div>
         </section>
    </article>
