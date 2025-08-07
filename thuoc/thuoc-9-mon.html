@@ -40,6 +40,10 @@
                 <li><a href="../toys-page/">Đồ chơi</a></li>
             </ul>
         </nav>
+         <a href="../gio-hang.html" class="cart-icon-mobile">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cart-count-mobile">0</span>
+        </a>
 
         <label for="navbar-mobile-input" class="navbar-mobile-button">
             <i class="fa-solid fa-bars"></i>
@@ -78,6 +82,10 @@
                 </ul>
             </div>
         </nav>
+         <a href="../gio-hang.html" class="cart-icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cart-count">0</span>
+        </a>
     </header>
 
    <article class="product-container">
@@ -103,6 +111,21 @@
                 <span class="original-price">130.000 đ</span>
                 <span class="discount-padding">-15%</span>
             </div>
+              <div class="cart-action">
+                <button 
+                    class="add-to-cart-btn"
+                    onclick="addToCart({
+                        id: 'thuoc-9-mon',
+                        name: 'Bộ Thước Eke 9 Món Học Toán Hộp Thiếc - Helix',
+                        price: 110000,
+                        image: 'image/stationery/thuoc/thuoc-9-mon.jpg',
+                        quantity: 1
+                    })"
+                >
+                    Thêm vào giỏ hàng
+                </button>
+            </div>
+
         </section>
    </article>
 

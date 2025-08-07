@@ -40,6 +40,10 @@
                 <li><a href="../toys-page/">Đồ chơi</a></li>
             </ul>
         </nav>
+        <a href="../gio-hang.html" class="cart-icon-mobile">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cart-count-mobile">0</span>
+        </a>
 
         <label for="navbar-mobile-input" class="navbar-mobile-button">
             <i class="fa-solid fa-bars"></i>
@@ -78,6 +82,10 @@
                 </ul>
             </div>
         </nav>
+        <a href="../gio-hang.html" class="cart-icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cart-count">0</span>
+        </a>
     </header>
 
    <article class="product-container">
@@ -103,6 +111,20 @@
                 <span class="current-price">5.500 đ</span>
                 <span class="original-price">6.500 đ</span>
                 <span class="discount-padding">-10%</span>
+            </div>
+             <div class="cart-action">
+                <button 
+                    class="add-to-cart-btn"
+                    onclick="addToCart({
+                        id: 'gom-ultraman',
+                        name: 'Gôm Tẩy Ultraman - Plus 610-V022',
+                        price: 6500,
+                        image: 'image/stationery/gom/gom-ultraman.jpg',
+                        quantity: 1
+                    })"
+                >
+                    Thêm vào giỏ hàng
+                </button>
             </div>
 
         </section>

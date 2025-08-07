@@ -39,6 +39,11 @@
                 <li><a href="../toys-page/toys.html">Đồ chơi</a></li>
             </ul>
         </nav>
+        <a href="../gio-hang.html" class="cart-icon-mobile">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cart-count-mobile">0</span>
+        </a>
+
 
         <label for="navbar-mobile-input" class="navbar-mobile-button">
             <i class="fa-solid fa-bars"></i>
@@ -77,6 +82,11 @@
                 </ul>
             </div>
         </nav>
+        <a href="../gio-hang.html" class="cart-icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cart-count">0</span>
+        </a>
+
     </header>
 
    <article class="product-container">
@@ -104,6 +114,21 @@
                 <span class="original-price">110.000 đ</span>
                 <span class="discount-padding">-15%</span>
             </div>
+              <div class="cart-action">
+                <button 
+                    class="add-to-cart-btn"
+                    onclick="addToCart({
+                        id: 'thang-quy-nho',
+                        name: 'Thằng Quỷ Nhỏ (2022)',
+                        price: 93000,
+                        image: 'image/nna/thang-quy-nho.jpg',
+                        quantity: 1
+                    })"
+                >
+                    Thêm vào giỏ hàng
+                </button>
+            </div>
+
         </section>
    </article>
 
