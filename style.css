@@ -470,7 +470,7 @@ img {
     line-height: 1.6;
 }
 
-.product-introduce div + div {
+.product-introduce div + div { /* bỏ qua div đầu tiên */
     margin-top: 20px;
 }
 
@@ -684,7 +684,7 @@ img {
         display: block;
     }
 
-    .dropdown-mobile li:last-child {
+    .dropdown-mobile li:last-child { /* bỏ đường viền của li cuối cùng */
         border-bottom: none;
     }
 
@@ -741,7 +741,7 @@ img {
         -webkit-tap-highlight-color: transparent;
     }
 
-    .container .product:nth-child(-n+2) {
+    .container .product:nth-child(-n+2) { /* đường viền cho 2 phần tử đầu tiên */
         border-top: 1px solid rgba(220, 218, 218, 0.55);
     }
 
