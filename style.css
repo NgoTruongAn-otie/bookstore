@@ -1255,3 +1255,27 @@ img {
     }
 }
 
+.customer-form {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.customer-form label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+.customer-form input,
+.customer-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+

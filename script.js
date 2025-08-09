@@ -110,9 +110,37 @@ function removeFromCart(id) {
 }
 
 function checkout() {
-    alert("Cảm ơn bạn đã mua hàng! (Chức năng thanh toán đang phát triển)");
+    const name = document.getElementById('customer-name').value.trim();
+    const phone = document.getElementById('customer-phone').value.trim();
+    const address = document.getElementById('customer-address').value.trim();
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+    if (cart.length === 0) {
+        alert("Giỏ hàng đang trống. Vui lòng thêm sản phẩm trước khi thanh toán.");
+        return;
+    }
+
+    if (!name || !phone || !address) {
+        alert("Vui lòng nhập đầy đủ thông tin khách hàng.");
+        return;
+    }
+
+    const phoneRegex = /^0[0-9]{9,10}$/;
+    if (!phoneRegex.test(phone)) {
+        alert("Số điện thoại không hợp lệ.");
+        return;
+    }
+
+    alert(`Cảm ơn ${name} đã mua hàng!\nSĐT: ${phone}\nĐịa chỉ: ${address}`);
+    
+    // Xoá giỏ hàng
     localStorage.removeItem('cart');
+
+    // Tải lại giỏ hàng rỗng
     loadCart();
+
+    // Reset form
+    document.getElementById('customer-info-form').reset();
 }
 
 document.addEventListener('DOMContentLoaded', loadCart);

@@ -91,9 +91,28 @@
 
     <main>
         <section class="cart-container">
+            x`
             <h1>Giỏ hàng của bạn</h1>
             <div id="cart-items"></div>
             <div class="total-container">Tổng: <span id="cart-total">0 đ</span></div>
+            <form id="customer-info-form" class="customer-form">
+                <h2>Thông tin khách hàng</h2>
+    
+                <label for="customer-name">Họ và tên:</label>
+                <input type="text" id="customer-name" placeholder="Nguyễn Văn A" required>
+
+                <label for="customer-phone">Số điện thoại:</label>
+                <input type="tel" id="customer-phone" placeholder="0987654321" required pattern="0[0-9]{9,10}">
+
+                <label for="customer-address">Địa chỉ:</label>
+                <textarea id="customer-address" rows="3" placeholder="123 Nguyễn Trãi, Q1, TP.HCM" required></textarea>
+
+                <h3>Phương thức thanh toán</h3>
+                <div class="payment-method">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1048/1048949.png" width="24" alt="COD icon">
+                    <span>Thanh toán khi giao hàng (COD)</span>
+                </div>
+            </form>
             <button class="checkout-btn" onclick="checkout()">Thanh toán</button>
         </section>
     </main>
